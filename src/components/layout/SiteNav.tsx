@@ -42,9 +42,9 @@ export function SiteNav() {
                 <button
                   type="button"
                   className={cn(
-                    "text-[11px] font-semibold uppercase tracking-[0.2em] transition hover:text-[var(--accent)]",
+                    "text-[11px] font-semibold uppercase tracking-[0.2em] transition hover:text-[var(--brand-teal)]",
                     pathname.startsWith("/projects")
-                      ? "text-[var(--accent)]"
+                      ? "text-[var(--brand-teal)]"
                       : "text-[var(--fg-muted)]",
                   )}
                 >
@@ -56,7 +56,7 @@ export function SiteNav() {
                       <Link
                         key={p.href}
                         href={p.href}
-                        className="block px-5 py-2.5 text-sm text-[var(--fg-muted)] transition hover:bg-[var(--bg)] hover:text-[var(--accent)]"
+                        className="block px-5 py-2.5 text-sm text-[var(--fg-muted)] transition hover:bg-[var(--bg)] hover:text-[var(--brand-teal)]"
                       >
                         {p.label}
                       </Link>
@@ -69,8 +69,8 @@ export function SiteNav() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "text-[11px] font-semibold uppercase tracking-[0.2em] transition hover:text-[var(--accent)]",
-                  pathname === item.href ? "text-[var(--accent)]" : "text-[var(--fg-muted)]",
+                  "text-[11px] font-semibold uppercase tracking-[0.2em] transition hover:text-[var(--brand-teal)]",
+                  pathname === item.href ? "text-[var(--brand-teal)]" : "text-[var(--fg-muted)]",
                 )}
               >
                 {item.label}
@@ -81,7 +81,7 @@ export function SiteNav() {
 
         <Link
           href="/contact"
-          className="hidden border border-[var(--accent)] px-5 py-2.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-[var(--accent)] transition hover:bg-[var(--accent)] hover:text-[var(--bg)] lg:inline-flex"
+          className="hidden border border-[var(--brand-teal)] px-5 py-2.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-[var(--brand-teal)] transition hover:bg-[var(--brand-teal)] hover:text-[var(--bg)] lg:inline-flex"
         >
           Consult
         </Link>

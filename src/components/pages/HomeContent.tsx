@@ -29,7 +29,7 @@ export function HomeContent() {
           <div className="grid grid-cols-3 gap-8 text-center">
             {home.hero.stats.map((stat) => (
               <div key={stat.label} data-reveal>
-                <p className="font-display text-2xl font-semibold text-[var(--accent)] md:text-3xl">
+                <p className="font-display text-2xl font-semibold text-[var(--brand-teal)] md:text-3xl">
                   {stat.value}
                 </p>
                 <p className="mt-1 text-[10px] uppercase tracking-[0.2em] text-[var(--fg-muted)]">
@@ -132,8 +132,8 @@ export function HomeContent() {
                   index={i}
                 />
                 {/* Market Context for each project */}
-                <div className="border-l-2 border-[var(--accent)] bg-[var(--bg-elevated)] px-6 py-4 text-sm text-[var(--fg-muted)]">
-                  <strong className="text-[var(--accent)]">Market Context:</strong> {item.marketContext}
+                <div className="border-l-2 border-[var(--brand-teal)] bg-[var(--bg-elevated)] px-6 py-4 text-sm text-[var(--fg-muted)]">
+                  <strong className="text-[var(--brand-teal)]">Market Context:</strong> {item.marketContext}
                 </div>
               </div>
             ))}
@@ -167,7 +167,7 @@ export function HomeContent() {
                   {f.copy}
                 </p>
                 <div className="mt-4 rounded bg-[var(--bg)] px-4 py-3">
-                  <p className="text-xs font-medium uppercase tracking-[0.15em] text-[var(--accent)]">
+                  <p className="text-xs font-medium uppercase tracking-[0.15em] text-[var(--brand-teal)]">
                     {f.data}
                   </p>
                 </div>
@@ -257,20 +257,20 @@ export function HomeContent() {
           
           {/* Growth Data */}
           <div className="mt-12 grid gap-4 md:grid-cols-4" data-reveal>
-            <div className="rounded border border-[var(--accent)]/30 bg-[var(--bg)]/90 p-4">
-              <p className="text-sm font-medium text-[var(--accent)]">{home.hyderabad.data.employment}</p>
+            <div className="rounded border border-[var(--brand-teal)]/30 bg-[var(--bg)]/90 p-4">
+              <p className="text-sm font-medium text-[var(--brand-teal)]">{home.hyderabad.data.employment}</p>
               <p className="mt-1 text-xs uppercase tracking-[0.15em] text-[var(--fg-muted)]">Employment Base</p>
             </div>
-            <div className="rounded border border-[var(--accent)]/30 bg-[var(--bg)]/90 p-4">
-              <p className="text-sm font-medium text-[var(--accent)]">{home.hyderabad.data.infrastructure}</p>
+            <div className="rounded border border-[var(--brand-teal)]/30 bg-[var(--bg)]/90 p-4">
+              <p className="text-sm font-medium text-[var(--brand-teal)]">{home.hyderabad.data.infrastructure}</p>
               <p className="mt-1 text-xs uppercase tracking-[0.15em] text-[var(--fg-muted)]">Infrastructure Investment</p>
             </div>
-            <div className="rounded border border-[var(--accent)]/30 bg-[var(--bg)]/90 p-4">
-              <p className="text-sm font-medium text-[var(--accent)]">{home.hyderabad.data.growth}</p>
+            <div className="rounded border border-[var(--brand-teal)]/30 bg-[var(--bg)]/90 p-4">
+              <p className="text-sm font-medium text-[var(--brand-teal)]">{home.hyderabad.data.growth}</p>
               <p className="mt-1 text-xs uppercase tracking-[0.15em] text-[var(--fg-muted)]">Real Estate Growth</p>
             </div>
-            <div className="rounded border border-[var(--accent)]/30 bg-[var(--bg)]/90 p-4">
-              <p className="text-sm font-medium text-[var(--accent)]">{home.hyderabad.data.corporate}</p>
+            <div className="rounded border border-[var(--brand-teal)]/30 bg-[var(--bg)]/90 p-4">
+              <p className="text-sm font-medium text-[var(--brand-teal)]">{home.hyderabad.data.corporate}</p>
               <p className="mt-1 text-xs uppercase tracking-[0.15em] text-[var(--fg-muted)]">Global Centres</p>
             </div>
           </div>
@@ -285,7 +285,7 @@ export function HomeContent() {
             {home.media.topics.map((topic) => (
               <div
                 key={topic}
-                className="border border-[var(--line)] bg-[var(--bg-elevated)] px-6 py-5 transition hover:border-[var(--accent)]/30"
+                className="border border-[var(--line)] bg-[var(--bg-elevated)] px-6 py-5 transition hover:border-[var(--brand-teal)]/40"
               >
                 <p className="text-sm text-[var(--fg-muted)]">{topic}</p>
               </div>

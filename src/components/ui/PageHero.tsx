@@ -37,6 +37,7 @@ export function PageHero({
         <>
           <Image src={image} alt={imageAlt} fill priority className="object-cover opacity-35" sizes="100vw" />
           <div className="absolute inset-0 bg-gradient-to-r from-[var(--bg)] via-[var(--bg)]/85 to-[var(--bg)]/40" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[var(--brand-teal)]/5" />
         </>
       ) : null}
       <div
@@ -47,7 +48,7 @@ export function PageHero({
         )}
       >
         {subtitle ? (
-          <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[var(--accent)]">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[var(--brand-teal)]">
             {subtitle}
           </p>
         ) : null}

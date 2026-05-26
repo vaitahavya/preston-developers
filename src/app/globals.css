@@ -6,6 +6,9 @@
   --fg: #f5f3ef;
   --fg-muted: #a8a29e;
   --accent: #d4b87a;
+  --brand-teal: #4ecdc4;
+  --brand-teal-dark: #3bb5ad;
+  --brand-teal-light: #7dd3cc;
   --line: color-mix(in oklab, var(--fg) 12%, transparent);
   --background: var(--bg);
   --foreground: var(--fg);
@@ -35,8 +38,14 @@ body {
 }
 
 ::selection {
-  background: color-mix(in oklab, var(--accent) 35%, transparent);
+  background: color-mix(in oklab, var(--brand-teal) 25%, transparent);
   color: var(--fg);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--brand-teal);
+  outline-offset: 2px;
 }
 
 .reveal {

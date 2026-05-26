@@ -15,7 +15,7 @@ export function SiteFooter() {
           </p>
         </div>
         <div>
-          <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-[var(--brand-teal)]">
             Navigate
           </p>
           <ul className="mt-4 space-y-2">
@@ -23,7 +23,7 @@ export function SiteFooter() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="text-sm text-[var(--fg-muted)] transition hover:text-[var(--accent)]"
+                  className="text-sm text-[var(--fg-muted)] transition hover:text-[var(--brand-teal)]"
                 >
                   {item.label}
                 </Link>
@@ -32,7 +32,7 @@ export function SiteFooter() {
           </ul>
         </div>
         <div>
-          <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-[var(--brand-teal)]">
             Contact
           </p>
           <address className="mt-4 space-y-2 not-italic text-sm text-[var(--fg-muted)]">
