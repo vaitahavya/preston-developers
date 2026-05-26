@@ -29,8 +29,8 @@ export default function FounderPage() {
         <div className="mx-auto grid max-w-[1400px] gap-16 px-5 md:grid-cols-12 md:px-10">
           <div className="relative aspect-[3/4] overflow-hidden md:col-span-5" data-reveal>
             <Image
-              src={prestonMedia.aboutBg}
-              alt="Founder portrait environment"
+              src={prestonMedia.founderOffice}
+              alt="Randhir Reddy in Preston Developers office"
               fill
               className="object-cover"
               sizes="(min-width: 768px) 40vw, 100vw"
