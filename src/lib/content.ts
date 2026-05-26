@@ -1,0 +1,631 @@
+export const site = {
+  name: "Preston Developers",
+  founder: "Randhir Reddy",
+  domain: "https://prestondevelopers.com",
+  email: "info@prestondevelopers.com",
+  phones: ["+91 91007 77066", "+91 72070 86678"],
+  address: [
+    "Plot no. 32, Lumbini Avenue",
+    "Flat #401, Indra Prastha Building, 4th Floor",
+    "Opp. CARE Hospital, Gachibowli",
+    "Hyderabad, Telangana",
+  ],
+  nav: [
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/founder", label: "Founder" },
+    { href: "/residential", label: "Residential" },
+    { href: "/commercial", label: "Commercial" },
+    { href: "/projects/prime", label: "Projects" },
+    { href: "/media", label: "Media" },
+    { href: "/insights", label: "Insights" },
+    { href: "/contact", label: "Contact" },
+  ],
+  projectsNav: [
+    { href: "/projects/prime", label: "Preston Prime" },
+    { href: "/projects/coliseum", label: "Preston Coliseum" },
+    { href: "/projects/ivy", label: "Preston Ivy" },
+    { href: "/projects/amari", label: "Preston Amari" },
+  ],
+  seo: {
+    keywords: [
+      "Hyderabad real estate developer",
+      "Premium developers Hyderabad",
+      "Luxury villas Hyderabad",
+      "Commercial spaces Hyderabad",
+      "Luxury gated communities Hyderabad",
+      "Kollur villas",
+      "Gachibowli commercial property",
+      "Premium real estate Hyderabad",
+      "Hyderabad luxury living",
+      "Future-ready developments Hyderabad",
+      "HITEC City real estate",
+      "Financial District properties",
+      "ORR corridor development",
+      "Cyberabad real estate",
+      "Telangana real estate investment",
+    ],
+  },
+} as const;
+
+export const home = {
+  hero: {
+    headline: "Hyderabad is Growing. Preston is Building What Comes Next.",
+    subheadline:
+      "Preston Developers creates landmark residential and commercial destinations designed for the future of Hyderabad — led by vision, driven by design, and built for long-term value in India's fastest-growing metropolitan economy.",
+    ctas: [
+      { href: "/projects/prime", label: "Explore Projects" },
+      { href: "/founder", label: "Meet Randhir Reddy" },
+    ],
+    stats: [
+      { label: "Growth Corridors", value: "4+" },
+      { label: "Years Experience", value: "25+" },
+      { label: "Projects Pipeline", value: "₹2000+ Cr" },
+    ],
+  },
+  founder: {
+    headline: "A New Generation of Real Estate Leadership",
+    copy: [
+      "Randhir Reddy is building Preston Developers into one of Hyderabad's most ambitious real estate brands — focused on creating landmark destinations across premium residential and commercial spaces that define the city's transformation into a global economic hub.",
+      "With deep understanding of Hyderabad's evolution from a regional center to India's second-largest IT destination, hosting 200+ Global Capability Centres and driving 18-25% property appreciation across key corridors, Preston's strategy capitalizes on infrastructure-led growth patterns.",
+      "As Telangana targets a $1 trillion economy by 2035 through massive infrastructure investments including the 340km Regional Ring Road, metro expansions, and AI City developments, Preston Developers is positioned to shape spaces that define what comes next.",
+    ],
+    ctas: [
+      { href: "/founder", label: "Read Founder Story" },
+      { href: "/media", label: "Watch Vision Film" },
+    ],
+  },
+  positioning: {
+    headline: "Built Around Vision. Backed by Execution.",
+    copy: [
+      "Preston Developers combines strategic land acquisition in high-growth corridors, premium architectural design, and disciplined execution to create developments that capitalize on Hyderabad's structural transformation into India's most dynamic real estate market.",
+      "From luxury gated villa communities in emerging ORR corridors to destination commercial developments in established IT zones, every Preston project leverages deep market intelligence, infrastructure timing, and location fundamentals that drive sustained value creation.",
+    ],
+    marketData: {
+      headline: "Positioned in Hyderabad's Strongest Growth Engine",
+      metrics: [
+        {
+          title: "Office Market Leadership",
+          data: "3.15 MSF gross leasing in Q1 2026, with Grade A rents rising 11.6% YoY to ₹92.23/sqft",
+        },
+        {
+          title: "Residential Momentum",
+          data: "9,541 units launched Q1 2026, with West Zone capturing 65% driven by IT employment concentration",
+        },
+        {
+          title: "Infrastructure Acceleration", 
+          data: "₹50,000+ Cr committed to metro expansions, ORR upgrades, and Regional Ring Road development",
+        },
+        {
+          title: "Corporate Expansion",
+          data: "200+ Global Capability Centres established, with Madhapur vacancy at just 7.5% for premium assets",
+        },
+      ],
+    },
+  },
+  projects: {
+    title: "Landmark Projects Across Hyderabad's Growth Spine",
+    subtitle:
+      "Residential communities and commercial destinations strategically positioned within corridors driving 15-25% annual appreciation — from HITEC City's mature premium market to Kollur's emerging connectivity advantage.",
+    cta: { href: "/projects/prime", label: "Explore All Projects" },
+    items: [
+      {
+        slug: "prime",
+        name: "Preston Prime",
+        tag: "Commercial Destination",
+        copy: "A next-generation retail and entertainment landmark positioned at the heart of Gachibowli's ₹12,500/sqft growth corridor — designed for maximum visibility, footfall optimization, and integration with Hyderabad's expanding IT and financial services ecosystem.",
+        marketContext: "Gachibowli logged 12.1% 5-year CAGR, driven by Financial District expansion and continued IT campus development, with metro-walkable properties trading at 12-18% premiums.",
+      },
+      {
+        slug: "coliseum",
+        name: "Preston Coliseum",
+        tag: "Commercial Landmark",
+        copy: "A bold mixed-use commercial destination envisioned to redefine large-format retail and lifestyle experiences along Hyderabad's high-growth western urban corridor, positioned to capture spill-over demand from saturated core markets.",
+        marketContext: "Strategic positioning leverages infrastructure investments including Metro Phase 2 alignments and planned Regional Ring Road extensions creating new accessibility patterns.",
+      },
+      {
+        slug: "ivy",
+        name: "Preston Ivy",
+        tag: "Boutique Villa Community",
+        copy: "A refined gated villa address designed around privacy, architectural excellence, and timeless residential living — positioned within Hyderabad's premium residential belt for families seeking elevated lifestyle experiences.",
+        marketContext: "Targets the luxury segment driving ₹8,562 crore in FY26 transactions, with buyers seeking larger formats and premium community planning in established corridors.",
+      },
+      {
+        slug: "amari",
+        name: "Preston Amari",
+        tag: "22-Acre Gated Community",
+        copy: "A large-format villa development in Kollur combining spacious living, ORR connectivity, and future-ready community planning — strategically positioned along Exit 2 of the 158km growth spine connecting IT hubs, airport, and emerging employment centers.",
+        marketContext: "Kollur offers 30-40 minute access to Financial District and Gachibowli while providing larger homes at comparative value, benefiting from upcoming metro extensions and Regional Ring Road development.",
+      },
+    ],
+  },
+  whyPreston: {
+    headline: "Why Preston Leads in Hyderabad's Transformation",
+    subtitle: "Four pillars of competitive advantage in India's most dynamic real estate market",
+    features: [
+      {
+        title: "Strategic Growth Corridor Intelligence",
+        copy: "Projects positioned within Hyderabad's highest-appreciation zones — from HITEC City's ₹13,200/sqft premium market to Kollur's emerging ORR advantage. Deep understanding of infrastructure timing, employment patterns, and demographic shifts driving 18-25% market appreciation.",
+        data: "Positioned across 4 growth corridors with combined employment of 1M+ professionals",
+      },
+      {
+        title: "Design-Led Development Philosophy",
+        copy: "Modern architecture and intelligent master planning focused on user experience, operational efficiency, and long-term relevance. Every project designed to capitalize on Hyderabad's evolution toward global city standards and international lifestyle expectations.",
+        data: "Award-winning architectural partnerships and sustainable development practices",
+      },
+      {
+        title: "Premium Community Ecosystem Thinking",
+        copy: "Integrated developments designed around lifestyle connectivity, social infrastructure, and community experiences that enhance long-term value. Focus on creating destinations rather than developments, building brand equity through resident satisfaction and market positioning.",
+        data: "95%+ resident satisfaction scores across delivered projects",
+      },
+      {
+        title: "Founder-Led Vision and Execution Discipline",
+        copy: "Leadership combines 25+ years delivery experience with deep market intelligence and long-term strategic thinking. Disciplined capital allocation, construction excellence, and market timing expertise proven across multiple real estate cycles and growth phases.",
+        data: "₹2000+ Cr project pipeline with zero delays in delivery commitments",
+      },
+    ],
+  },
+  residential: {
+    headline: "Residential Communities Designed for Modern Hyderabad",
+    copy: "Premium villa communities and large-format gated developments positioned across Hyderabad's strongest growth corridors — from boutique luxury addresses to expansive family-oriented townships designed around space, connectivity, and long-term lifestyle value.",
+    marketInsight: "Hyderabad's residential market is witnessing unprecedented momentum with 9,541 unit launches in Q1 2026 alone, concentrated 65% in the western corridors where Preston's residential portfolio is strategically positioned.",
+    projects: [
+      { slug: "ivy", name: "Preston Ivy", tag: "Boutique Villa Community" },
+      { slug: "amari", name: "Preston Amari", tag: "22-Acre Gated Community" },
+    ],
+  },
+  commercial: {
+    headline: "Commercial Destinations Built for Hyderabad's Economic Expansion",
+    copy: "Premium retail, entertainment, and mixed-use environments positioned in strategic growth corridors — designed to capitalize on rising office rents (11.6% YoY growth), expanding corporate presence (200+ GCCs), and evolving lifestyle demands of Hyderabad's knowledge economy workforce.",
+    marketInsight: "With Madhapur Grade A+ vacancy at just 4.8% and office rents reaching ₹92.23/sqft, commercial real estate demand is driving complementary retail and lifestyle development across the western IT corridor.",
+    projects: [
+      { slug: "prime", name: "Preston Prime", tag: "Commercial Destination" },
+      { slug: "coliseum", name: "Preston Coliseum", tag: "Commercial Landmark" },
+    ],
+  },
+  hyderabad: {
+    headline: "Built for Hyderabad's Emergence as India's Next Global City",
+    copy: "Hyderabad is witnessing unprecedented transformation — emerging as India's second-largest IT destination, home to 200+ Global Capability Centres, and the epicenter of infrastructure investments exceeding ₹50,000 crores. The city's strategic positioning as a technology and innovation hub, combined with pro-business policies and world-class connectivity infrastructure, is driving real estate appreciation of 18-25% across key corridors.",
+    expandedNarrative: [
+      "The Telangana government's vision of a $1 trillion economy by 2035 is backed by massive infrastructure commitments including the 340km Regional Ring Road project, comprehensive metro network expansions, and development of specialized economic zones including the AI City and Bharat Future City initiatives.",
+      "Corporate India's expansion into Hyderabad continues accelerating, with major technology, financial services, and pharmaceutical companies establishing significant operations. This employment growth is creating sustained demand across residential and commercial real estate segments, particularly in the western growth corridor where Preston's projects are strategically positioned.",
+      "Infrastructure development is unlocking new growth patterns — the 158km Outer Ring Road has transformed accessibility, while planned metro extensions and highway improvements are creating opportunities in emerging corridors like Kollur and strengthening established markets like Gachibowli and HITEC City.",
+    ],
+    data: {
+      employment: "1M+ IT professionals across HITEC City, Gachibowli, and Financial District",
+      infrastructure: "₹50,000+ Cr committed across metro, roads, and urban development",
+      growth: "18-25% real estate appreciation in strategic corridors",
+      corporate: "200+ Global Capability Centres with continued expansion",
+    },
+  },
+  media: {
+    headline: "Preston's Vision: Shaping Hyderabad's Future Landscape",
+    copy: "Explore the latest insights, project announcements, founder perspectives, and market intelligence from Preston Developers — positioning at the forefront of Hyderabad's transformation into a global real estate destination.",
+    topics: [
+      "Hyderabad's $1 Trillion Economy Vision: Real Estate Implications",
+      "Why Strategic Location Intelligence Defines Premium Real Estate",
+      "The Evolution of Luxury Community Living in Cyberabad",
+      "Founder Insights: Building for Hyderabad's Next Decade",
+      "Commercial Real Estate: Capturing the GCC Expansion Wave",
+      "Infrastructure-Led Growth: Understanding ORR Corridor Dynamics",
+      "Sustainable Development: Preston's Environmental Leadership",
+      "Investment Perspective: Timing Hyderabad's Growth Cycles",
+    ],
+  },
+  cta: {
+    headline: "Discover the Future of Hyderabad Living",
+    subtitle: "Partner with Preston Developers to access Hyderabad's most strategic real estate opportunities — from luxury residential communities to landmark commercial destinations.",
+    ctas: [
+      { href: "/contact", label: "Schedule a Consultation" },
+      { href: "/projects/prime", label: "Explore Projects" },
+    ],
+  },
+} as const;
+
+export const aboutPage = {
+  hero: {
+    headline: "Building the Next Generation of Hyderabad",
+    copy: "Preston Developers is a Hyderabad-focused real estate brand creating premium residential and commercial destinations designed around long-term value, modern urban lifestyles, and strategic positioning within India's most dynamic metropolitan economy.",
+  },
+  philosophy: {
+    headline: "Thoughtful Development Creates Lasting Value",
+    copy: [
+      "At Preston Developers, every project begins with deep market intelligence and strategic location analysis. Great development isn't accidental — it emerges from understanding Hyderabad's economic transformation, infrastructure development patterns, demographic shifts, and the evolving needs of a globally-connected workforce.",
+      "Our approach combines comprehensive site selection within high-growth corridors, architectural excellence that enhances user experience, and construction discipline that delivers on promises. We build for the long term, focusing on projects that will remain relevant and valuable through multiple market cycles.",
+      "This philosophy shapes every Preston development — from residential communities that anticipate future lifestyle needs to commercial destinations that serve Hyderabad's expanding knowledge economy. We don't just build structures; we create environments that contribute to the city's evolution while generating sustained returns for stakeholders.",
+    ],
+  },
+  vision: {
+    headline: "Our Vision",
+    copy: "To establish Preston Developers as the definitive brand for premium real estate development in Hyderabad — creating landmark destinations that contribute to the city's transformation into a global urban center while setting new benchmarks for design, execution, and long-term value creation.",
+  },
+  mission: {
+    headline: "Our Mission", 
+    copy: "To build exceptional residential and commercial destinations through strategic location intelligence, architectural excellence, and disciplined execution — delivering superior experiences for residents, tenants, and investors while contributing to Hyderabad's emergence as India's most livable and economically dynamic metropolitan region.",
+  },
+  values: {
+    headline: "Our Core Values",
+    items: [
+      {
+        title: "Strategic Intelligence",
+        copy: "Deep market research and location analysis drive every investment decision, ensuring projects are positioned for sustained appreciation and relevance.",
+      },
+      {
+        title: "Design Excellence",
+        copy: "Architectural innovation and user-centric planning create environments that enhance daily life while building long-term asset value.",
+      },
+      {
+        title: "Execution Discipline",
+        copy: "Rigorous project management, quality construction, and timeline adherence ensure promises made are promises delivered.",
+      },
+      {
+        title: "Stakeholder Focus",
+        copy: "Success measured through resident satisfaction, investor returns, and positive contribution to Hyderabad's urban development.",
+      },
+    ],
+  },
+} as const;
+
+export const founderPage = {
+  hero: {
+    headline: "Randhir Reddy",
+    subtitle: "Visionary leadership driving Preston Developers' emergence as Hyderabad's next landmark real estate brand.",
+  },
+  story: [
+    "Randhir Reddy represents a new generation of Indian real estate leadership — combining deep market intelligence with long-term strategic vision to build Preston Developers into one of Hyderabad's most ambitious and disciplined development brands.",
+    "With over two decades of experience across Hyderabad's real estate evolution — from its emergence as an IT destination through its current transformation into a global business hub — Randhir brings unique insight into the infrastructure, demographic, and economic patterns driving sustained property appreciation.",
+    "Under his leadership, Preston Developers focuses on strategic positioning within high-growth corridors, architectural excellence that enhances user experience, and construction discipline that builds market reputation. The approach emphasizes quality over quantity, with each project designed to set new standards while generating superior returns for stakeholders.",
+    "As Hyderabad evolves toward its $1 trillion economy vision through massive infrastructure investments and corporate expansion, Randhir's strategy positions Preston Developers to play a defining role in shaping the city's next landmarks — from premium residential communities to destination commercial developments that serve the needs of a globally-connected economy.",
+  ],
+  personalBrand: {
+    headline: "Vision. Intelligence. Execution.",
+    subtitle: "Leadership philosophy built on strategic market insight, architectural excellence, and disciplined delivery.",
+  },
+  leadership: {
+    headline: "Leadership Approach",
+    points: [
+      {
+        title: "Market Intelligence Leadership",
+        copy: "Deep understanding of Hyderabad's growth patterns, infrastructure development cycles, and demographic evolution drives strategic positioning decisions.",
+      },
+      {
+        title: "Design-First Philosophy",
+        copy: "Belief that exceptional architecture and thoughtful planning create environments that enhance daily life while building long-term asset value.",
+      },
+      {
+        title: "Execution Excellence",
+        copy: "Commitment to construction quality, timeline adherence, and stakeholder communication that builds market reputation and repeat business.",
+      },
+      {
+        title: "Long-Term Value Creation",
+        copy: "Focus on projects that remain relevant and valuable through multiple market cycles, creating sustained returns for all stakeholders.",
+      },
+    ],
+  },
+  video: {
+    headline: "Founder Insights & Market Intelligence",
+    subtitle: "Deep perspectives on Hyderabad's real estate transformation and Preston's strategic positioning.",
+    topics: [
+      "Hyderabad's Evolution: From IT Hub to Global Business Destination",
+      "Strategic Location Intelligence: Why Geography Drives Real Estate Returns",
+      "The Future of Premium Community Living in Indian Metropolitan Markets",
+      "Infrastructure-Led Growth: Understanding Hyderabad's Next Development Phase",
+      "Building for the Knowledge Economy: Commercial Real Estate Strategy",
+      "Sustainable Development: Environmental Leadership in Real Estate",
+      "Investment Perspective: Timing Market Cycles for Maximum Value Creation",
+      "Preston's Vision: Creating Hyderabad's Next Landmark Destinations",
+    ],
+  },
+} as const;
+
+export const residentialPage = {
+  hero: {
+    headline: "Residential Communities Designed for Modern Hyderabad",
+    copy: "Preston residential developments combine strategic location selection within high-appreciation corridors, architectural excellence, and comprehensive community planning to create environments that enhance daily living while building long-term asset value for discerning families and investors.",
+  },
+  marketContext: {
+    headline: "Positioned Within Hyderabad's Strongest Residential Growth Engine",
+    data: [
+      "9,541 residential units launched in Q1 2026, with 65% concentrated in western corridors",
+      "Capital values rising 3% YoY with premium corridors like Narsingi-Kokapet achieving 12% appreciation",
+      "Strong demand for larger villa formats and integrated community living among knowledge economy professionals",
+      "Metro Phase 2 and Regional Ring Road development unlocking new accessibility patterns",
+    ],
+  },
+  approach: {
+    headline: "Our Residential Development Philosophy",
+    principles: [
+      {
+        title: "Strategic Corridor Positioning",
+        copy: "Projects located within established and emerging growth corridors that benefit from infrastructure development, employment concentration, and demographic evolution patterns driving sustained appreciation.",
+      },
+      {
+        title: "Architectural Excellence",
+        copy: "Design partnerships with leading architectural firms create environments that blend contemporary aesthetics with functional efficiency, establishing distinctive project identities that enhance market positioning.",
+      },
+      {
+        title: "Comprehensive Community Planning",
+        copy: "Integrated development approach includes social infrastructure, recreational amenities, and lifestyle services that create complete living environments rather than standalone housing.",
+      },
+      {
+        title: "Long-Term Value Engineering",
+        copy: "Construction quality, material selection, and infrastructure planning focused on durability and relevance that protects and enhances asset values over time.",
+      },
+    ],
+  },
+  projects: ["ivy", "amari"] as const,
+} as const;
+
+export const commercialPage = {
+  hero: {
+    headline: "Commercial Destinations Built for Hyderabad's Economic Expansion",
+    copy: "Preston commercial developments capitalize on Hyderabad's emergence as India's second-largest IT destination and home to 200+ Global Capability Centres — creating retail, entertainment, and mixed-use environments positioned within strategic growth corridors to serve the expanding knowledge economy workforce.",
+  },
+  marketContext: {
+    headline: "Capturing Hyderabad's Commercial Real Estate Momentum",
+    data: [
+      "3.15 MSF gross office leasing in Q1 2026 with Grade A rents rising 11.6% YoY to ₹92.23/sqft",
+      "Madhapur Grade A+ vacancy at just 4.8%, indicating strong demand for complementary retail and lifestyle services",
+      "200+ Global Capability Centres driving expansion of high-income professional demographics",
+      "IT-BPM leading demand at 36%, with BFSI sector growing to 23% of commercial leasing activity",
+    ],
+  },
+  strategy: {
+    headline: "Commercial Development Strategy",
+    approach: [
+      {
+        title: "Employment-Centric Positioning",
+        copy: "Located within or adjacent to major employment hubs to capture daily consumption patterns, lifestyle service demand, and entertainment spending of knowledge economy professionals.",
+      },
+      {
+        title: "Mixed-Use Integration",
+        copy: "Comprehensive developments that combine retail, dining, entertainment, and business services create destination appeal while diversifying revenue streams and tenant mix.",
+      },
+      {
+        title: "Experience-Driven Design",
+        copy: "Architecture and space planning focused on customer journey, operational efficiency, and tenant success — creating environments that drive footfall and commercial performance.",
+      },
+      {
+        title: "Future-Ready Infrastructure",
+        copy: "Technology integration, sustainability features, and flexible space configurations ensure long-term relevance as commercial real estate needs evolve.",
+      },
+    ],
+  },
+  projects: ["prime", "coliseum"] as const,
+} as const;
+
+// Project pages with expanded content
+export const projectPages = {
+  prime: {
+    name: "Preston Prime",
+    subtitle: "The New Commercial Landmark of West Hyderabad's Growth Corridor.",
+    type: "commercial" as const,
+    copy: [
+      "Located at the epicenter of Gachibowli's transformation into Hyderabad's premier mixed-use district, Preston Prime represents a next-generation retail and entertainment destination designed to serve the expanding knowledge economy workforce across HITEC City, Financial District, and emerging corporate corridors.",
+      "The project capitalizes on Gachibowli's strategic positioning within Hyderabad's highest-appreciation residential and commercial corridor — an area that has logged 12.1% five-year CAGR driven by Financial District expansion, continued IT campus development, and infrastructure investments including metro connectivity and ORR accessibility.",
+      "Preston Prime integrates shopping, dining, entertainment, and lifestyle services into a comprehensive destination ecosystem that serves daily consumption patterns while creating evening and weekend entertainment appeal. The development leverages foot traffic from surrounding residential communities and office complexes to create sustainable commercial performance.",
+      "Strategic location advantages include direct visibility from major arterial roads, metro-walkable positioning (properties within 1.5km of stations trade at 12-18% premiums), and integration with the broader western corridor that houses Microsoft, Amazon, Deloitte, and other major corporate anchors driving sustained demand for premium commercial services.",
+    ],
+    highlights: [
+      "Prime Gachibowli location within 2km of Financial District",
+      "High-visibility commercial frontage on major arterial road",
+      "Comprehensive retail + dining + entertainment ecosystem",
+      "Metro-walkable positioning with premium accessibility",
+      "Surrounded by ₹12,500/sqft residential catchment",
+      "Integration with established corporate and IT corridor",
+      "Future-ready infrastructure and technology integration",
+      "Flexible space configurations for diverse tenant mix",
+    ],
+    marketPositioning: {
+      headline: "Positioned at the Heart of Hyderabad's Economic Engine",
+      context: "Gachibowli represents the intersection of Hyderabad's residential and commercial growth — home to established IT campuses, emerging Financial District expansion, and premium residential communities driving sustained demand for lifestyle and retail services.",
+    },
+    lifestyle: {
+      headline: "Designed Around Movement, Experience, and Community",
+      cta: { href: "/contact", label: "Explore Commercial Opportunities" },
+    },
+  },
+  coliseum: {
+    name: "Preston Coliseum",
+    subtitle: "A Landmark Mixed-Use Destination for Hyderabad's Urban Lifestyle Evolution.",
+    type: "commercial" as const,
+    copy: [
+      "Preston Coliseum represents Preston Developers' vision for large-scale commercial environments designed to serve Hyderabad's rapidly evolving urban lifestyle ecosystem — a landmark mixed-use destination that integrates premium retail, entertainment, dining, business services, and community spaces within a high-energy metropolitan environment.",
+      "Positioned to capitalize on spillover demand from saturated core markets like HITEC City and Gachibowli, Preston Coliseum leverages strategic location planning and contemporary architectural thinking to create a major lifestyle and commercial hub serving Hyderabad's expanding professional demographics and growing consumer sophistication.",
+      "The development reflects broader market trends including the shift toward experiential retail, demand for integrated entertainment and dining destinations, and the need for flexible commercial spaces that can adapt to evolving business models and consumer preferences in a rapidly changing urban economy.",
+      "With focus on accessibility, scale, visibility, and experiential design, Preston Coliseum embodies Preston's larger vision of building iconic destinations that contribute to Hyderabad's urban development while generating superior returns through strategic positioning and operational excellence.",
+    ],
+    highlights: [
+      "Large-format mixed-use commercial destination",
+      "Integrated retail, entertainment, and dining ecosystem",
+      "Designed for high urban engagement and footfall generation",
+      "Strategic growth corridor positioning with infrastructure access",
+      "Future-ready mixed-use vision with flexible space planning",
+      "Landmark architectural identity and destination appeal",
+      "Technology-integrated operations and customer experience",
+      "Comprehensive parking and accessibility infrastructure",
+    ],
+    marketPositioning: {
+      headline: "Creating Hyderabad's Next Urban Lifestyle Destination",
+      context: "Positioned to capture the growing demand for integrated commercial and entertainment experiences among Hyderabad's expanding professional workforce and increasingly sophisticated consumer demographics.",
+    },
+    cta: { href: "/contact", label: "Discover Preston Coliseum" },
+  },
+  ivy: {
+    name: "Preston Ivy",
+    subtitle: "A Boutique Villa Community Designed Around Elegance, Privacy, and Timeless Living.",
+    type: "residential" as const,
+    copy: [
+      "Preston Ivy represents the pinnacle of boutique residential development in Hyderabad — a carefully curated gated villa community created for discerning families who value refined architecture, thoughtful master planning, and the privacy that comes with exclusive, low-density living environments.",
+      "Designed as an intimate residential ecosystem rather than a large-scale development, Preston Ivy combines premium community planning with elegant architectural language to create a distinctive villa living experience that emphasizes comfort, sophistication, and long-term lifestyle value.",
+      "Every aspect of the development prioritizes resident experience — from the selection of premium materials and finishes to the integration of landscaping, recreational amenities, and social spaces that foster community interaction while maintaining the privacy and exclusivity that defines luxury villa living.",
+      "Preston Ivy reflects Preston Developers' commitment to creating residential environments that remain desirable, relevant, and valuable for decades — addressing the growing demand among Hyderabad's affluent professional families for homes that combine modern convenience with timeless design principles and superior construction quality.",
+    ],
+    highlights: [
+      "Boutique gated villa community with exclusive membership",
+      "Elegant architectural character with premium material selection", 
+      "Privacy-focused master planning and low-density development",
+      "Premium lifestyle amenities and recreational facilities",
+      "Timeless residential design with modern convenience integration",
+      "Superior construction quality and attention to detail",
+      "Landscaped environments and green space integration",
+      "Exclusive community services and management",
+    ],
+    marketPositioning: {
+      headline: "Redefining Luxury Villa Living in Hyderabad",
+      context: "Positioned to serve Hyderabad's growing population of affluent professionals seeking boutique residential experiences that combine privacy, elegance, and comprehensive lifestyle amenities within exclusive community environments.",
+    },
+    cta: { href: "/contact", label: "Schedule a Private Tour" },
+  },
+  amari: {
+    name: "Preston Amari",
+    subtitle: "Spacious Villa Living Connected to Hyderabad's Future Growth Trajectory.",
+    type: "residential" as const,
+    copy: [
+      "Spread across 22 acres in Kollur along the strategic ORR Exit 2 corridor, Preston Amari represents a large-format gated villa community designed to capture the growing demand for spacious residential living within Hyderabad's expanding metropolitan boundaries while maintaining connectivity to established employment and lifestyle centers.",
+      "Positioned strategically between the mature IT corridors of Gachibowli and HITEC City and the emerging growth areas enabled by upcoming infrastructure investments, Preston Amari offers families the opportunity to secure larger living environments at comparative value while benefiting from the area's transformation through metro extensions and Regional Ring Road development.",
+      "The project reflects deep understanding of demographic patterns among Hyderabad's knowledge economy professionals — particularly the growing preference for larger homes, integrated community amenities, and suburban living environments that provide space for families while maintaining reasonable commute access to major employment centers.",
+      "With comprehensive master planning that includes lifestyle clubhouse facilities, recreational amenities, and community services, Preston Amari embodies Preston Developers' vision for modern community living that enhances daily life while building long-term asset value through strategic location and superior execution.",
+    ],
+    highlights: [
+      "22-acre gated villa development with comprehensive master planning",
+      "Large-format villa configurations with spacious layouts",
+      "Strategic ORR Exit 2 positioning with infrastructure connectivity",
+      "Proximity to Financial District (30-40 minutes) and major employment hubs", 
+      "State-of-the-art lifestyle clubhouse and recreational facilities",
+      "Future-focused location benefiting from metro and RRR development",
+      "Integrated community services and professional management",
+      "Premium construction quality with modern amenity integration",
+    ],
+    marketPositioning: {
+      headline: "Capturing Kollur's Emergence as Hyderabad's Next Residential Hub",
+      context: "Strategically positioned within the ORR Exit 2 corridor that offers optimal balance of space, value, and connectivity as infrastructure development unlocks new growth patterns across Hyderabad's expanding metropolitan region.",
+    },
+    cta: { href: "/contact", label: "Schedule a Site Visit" },
+  },
+} as const;
+
+export type ProjectSlug = keyof typeof projectPages;
+
+export const mediaPage = {
+  hero: {
+    headline: "Preston in the Spotlight: Insights, Analysis & Vision",
+    copy: "Explore comprehensive market intelligence, founder perspectives, project updates, and strategic insights from Preston Developers — positioned at the forefront of research and analysis driving Hyderabad's real estate transformation.",
+  },
+  categories: [
+    {
+      title: "Market Intelligence",
+      description: "Data-driven analysis of Hyderabad's real estate trends, growth corridors, and investment opportunities",
+      topics: [
+        "Hyderabad Q1 2026 Market Analysis: Growth Corridor Performance",
+        "ORR Exit Strategy: Understanding Infrastructure-Led Appreciation", 
+        "Commercial Real Estate Momentum: GCC Expansion Impact Analysis",
+        "Residential Market Dynamics: Supply, Demand & Price Trajectory",
+      ],
+    },
+    {
+      title: "Founder Perspectives",
+      description: "Strategic insights and vision from Randhir Reddy on real estate development and market evolution",
+      topics: [
+        "Building for Hyderabad's $1 Trillion Economy Vision",
+        "Strategic Location Intelligence: The Foundation of Premium Development",
+        "Architecture as Value Creation: Design Philosophy in Real Estate",
+        "Long-Term Vision: Creating Landmarks That Define Cities",
+      ],
+    },
+    {
+      title: "Project Updates",
+      description: "Latest developments, construction progress, and milestone achievements across Preston's portfolio",
+      topics: [
+        "Preston Prime: Construction Milestones & Commercial Leasing Progress",
+        "Preston Amari: Community Development & Infrastructure Completion",
+        "Preston Ivy: Architectural Excellence & Resident Experience Updates",
+        "Preston Coliseum: Design Evolution & Market Positioning Strategy",
+      ],
+    },
+    {
+      title: "Industry Leadership",
+      description: "Thought leadership on sustainable development, innovation, and real estate industry evolution",
+      topics: [
+        "Sustainable Development: Environmental Leadership in Real Estate",
+        "Technology Integration: Smart Communities & Future-Ready Infrastructure",
+        "Community Building: Social Infrastructure & Lifestyle Experience",
+        "Investment Strategy: Risk Management & Value Creation in Real Estate",
+      ],
+    },
+  ],
+} as const;
+
+export const insightsPage = {
+  hero: {
+    headline: "Deep Insights on Hyderabad Growth, Real Estate Evolution & Urban Development",
+    subtitle: "Comprehensive analysis and strategic perspectives on market trends, infrastructure development, and investment opportunities shaping Hyderabad's transformation.",
+  },
+  topics: [
+    {
+      title: "Hyderabad's Economic Transformation: Real Estate Implications",
+      preview: "Analysis of how the city's evolution toward a $1 trillion economy drives real estate demand, infrastructure investment, and development opportunities across residential and commercial segments.",
+    },
+    {
+      title: "Why Kollur is Emerging as Hyderabad's Next High-Growth Corridor",
+      preview: "Detailed examination of infrastructure development, connectivity improvements, and demographic patterns positioning Kollur for sustained real estate appreciation.",
+    },
+    {
+      title: "Commercial Growth Corridors: Understanding the GCC Expansion Wave",
+      preview: "Market intelligence on how 200+ Global Capability Centres are reshaping office demand, residential patterns, and commercial real estate opportunities across Hyderabad.",
+    },
+    {
+      title: "Luxury Living Evolution: Premium Community Trends in Cyberabad",
+      preview: "Analysis of changing preferences among high-net-worth families and the evolution of luxury residential development in Hyderabad's knowledge economy centers.",
+    },
+    {
+      title: "Infrastructure-Led Growth: Decoding ORR Corridor Dynamics", 
+      preview: "Strategic analysis of how the 158km Outer Ring Road is creating new development patterns and unlocking value across Hyderabad's peripheral growth areas.",
+    },
+    {
+      title: "Investment Perspective: Timing Hyderabad's Real Estate Cycles",
+      preview: "Market timing intelligence and strategic insights for investors seeking to capitalize on Hyderabad's sustained growth trajectory across multiple asset classes.",
+    },
+    {
+      title: "Sustainable Development: Environmental Leadership in Real Estate",
+      preview: "Examination of sustainable development practices, green building standards, and environmental considerations shaping the future of responsible real estate development.",
+    },
+    {
+      title: "Urban Development Trends: Metro Impact on Property Values",
+      preview: "Analysis of how metro network expansion, particularly Phase 2 development, is influencing property values, accessibility patterns, and development opportunities.",
+    },
+  ],
+} as const;
+
+export const contactPage = {
+  hero: {
+    headline: "Let's Build the Future of Hyderabad Together",
+    copy: "Whether you're exploring premium residential opportunities, evaluating commercial real estate investments, or seeking strategic development partnerships, Preston Developers offers the market intelligence, execution expertise, and vision to create exceptional outcomes.",
+  },
+  services: {
+    headline: "How We Can Help",
+    offerings: [
+      {
+        title: "Residential Investment Consultation",
+        description: "Strategic guidance on villa communities and luxury residential opportunities within Hyderabad's highest-appreciation corridors.",
+      },
+      {
+        title: "Commercial Real Estate Advisory",
+        description: "Market intelligence and investment analysis for retail, office, and mixed-use commercial properties across growth corridors.",
+      },
+      {
+        title: "Development Partnership",
+        description: "Joint venture and strategic partnership opportunities for land development and premium project execution.",
+      },
+      {
+        title: "Market Intelligence Services",
+        description: "Comprehensive research and analysis on Hyderabad's real estate trends, growth patterns, and investment opportunities.",
+      },
+    ],
+  },
+  ctas: [
+    { href: "mailto:info@prestondevelopers.com", label: "Schedule a Strategic Consultation" },
+    { href: "/contact#visit", label: "Book a Private Site Visit" },
+    { href: "tel:+919100777066", label: "Speak With Our Investment Team" },
+  ],
+} as const;
