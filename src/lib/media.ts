@@ -26,6 +26,14 @@ export const prestonMedia = {
     sports: "/images/preston/amari-sports.jpg",
     banquet: "/images/preston/amari-banquet.jpg",
   },
+  
+  // Ivy specific feature images
+  ivy: {
+    interior: "/images/preston/ivy-interior.jpg",
+    smartHome: "/images/preston/ivy-smart-home.jpg",
+    clubhouse: "/images/preston/ivy-clubhouse.jpg",
+    exterior: "/images/preston/ivy-exterior.jpg",
+  },
 } as const;
 
 export function projectImage(slug: ProjectSlug): string {

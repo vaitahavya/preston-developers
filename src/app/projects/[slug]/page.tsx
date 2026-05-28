@@ -4,6 +4,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { AmariProject } from "@/components/projects/AmariProject";
+import { IvyProject } from "@/components/projects/IvyProject";
 import { projectPages, type ProjectSlug } from "@/lib/content";
 import { projectImage } from "@/lib/media";
 import { createMetadata, projectJsonLd } from "@/lib/seo";
@@ -53,9 +54,11 @@ export default async function ProjectPage({ params }: Props) {
         size="large"
       />
 
-      {/* Specialized Amari Project Content */}
+      {/* Specialized Project Content */}
       {slug === 'amari' ? (
         <AmariProject />
+      ) : slug === 'ivy' ? (
+        <IvyProject />
       ) : (
         <>
           {/* Market Positioning (if available) */}

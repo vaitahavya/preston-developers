@@ -453,29 +453,97 @@ export const projectPages = {
   },
   ivy: {
     name: "Preston Ivy",
-    subtitle: "A Boutique Villa Community Designed Around Elegance, Privacy, and Timeless Living.",
+    subtitle: "Premium Villa Community with Italian Marble, Smart Home Technology & 15,000 SqFt Clubhouse",
     type: "residential" as const,
     copy: [
-      "Preston Ivy represents the pinnacle of boutique residential development in Hyderabad — a carefully curated gated villa community created for discerning families who value refined architecture, thoughtful master planning, and the privacy that comes with exclusive, low-density living environments.",
-      "Designed as an intimate residential ecosystem rather than a large-scale development, Preston Ivy combines premium community planning with elegant architectural language to create a distinctive villa living experience that emphasizes comfort, sophistication, and long-term lifestyle value.",
-      "Every aspect of the development prioritizes resident experience — from the selection of premium materials and finishes to the integration of landscaping, recreational amenities, and social spaces that foster community interaction while maintaining the privacy and exclusivity that defines luxury villa living.",
-      "Preston Ivy reflects Preston Developers' commitment to creating residential environments that remain desirable, relevant, and valuable for decades — addressing the growing demand among Hyderabad's affluent professional families for homes that combine modern convenience with timeless design principles and superior construction quality.",
+      "Preston Ivy represents sophisticated villa living with Italian marble flooring, wooden bedroom floors, and premium Villeroy & Boch fittings throughout. Each villa features smart home automation with B.ONE hub technology, VRF air conditioning, and comprehensive security systems including biometric locks and CCTV monitoring.",
+      "The community centers around a magnificent 15,000 sq ft four-level clubhouse featuring a banquet hall for 150 guests, spa with massage rooms and jacuzzi, indoor games room, association office, and 4 guest bedrooms. The facility includes outdoor swimming pool with gender-specific changing rooms and dedicated kids play area.",
+      "Built with earthquake-resistant RCC framework compliant with IS codes for Hyderabad's seismic zone, featuring 8-feet height teakwood doors, UPVC windows with mosquito mesh, and solar power integration. Every villa receives 10-12 KVA power supply with 100% DG backup and treated water through pneumatic systems.",
     ],
+    specifications: {
+      headline: "Premium Construction & Smart Home Features",
+      flooring: [
+        "Italian marble in foyer, drawing, living & dining areas",
+        "Wooden flooring in bedrooms, living & home theater",
+        "Premium Pamesa Ceramica tiles in toilets", 
+        "Vitrified tiles in balconies and lobbies",
+        "Granite/marble staircase with premium finishes",
+      ],
+      smartHome: [
+        "B.ONE smart home automation hub (world's most powerful)",
+        "Mobile app control for lights, AC, and security",
+        "Video door bell with visitor monitoring",
+        "Motion sensors and alarm system integration",
+        "Media control (audio and video systems)",
+        "Biometric lock system on main entrance",
+      ],
+      premiumFeatures: [
+        "VRF air conditioning (Daikin/Mitsubishi compatible)",
+        "Villeroy & Boch / Duravit sanitary fittings",
+        "Teakwood frames with 8-feet height doors",
+        "Granite kitchen countertops with premium sink",
+        "Solar power street lights & water heating",
+        "Schindler automatic passenger lifts",
+      ]
+    },
+    clubhouseFeatures: {
+      headline: "Four-Level 15,000 SqFt Clubhouse Complex",
+      facilities: [
+        {
+          category: "Entertainment & Events",
+          amenities: [
+            "Grand banquet hall (100-150 guests capacity)",
+            "Terrace floor for private mini parties",
+            "Indoor games room (table tennis & snooker/billiards)",
+            "Cards room for leisure activities",
+            "Association office for community management",
+          ]
+        },
+        {
+          category: "Wellness & Spa",
+          amenities: [
+            "Mini spa with professional massage rooms",
+            "Steam rooms for relaxation therapy",
+            "Jacuzzi for luxury wellness experience",
+            "Yoga and stretching area",
+            "Gym with modern fitness equipment",
+          ]
+        },
+        {
+          category: "Hospitality & Services",
+          amenities: [
+            "4 fully-equipped guest bedrooms",
+            "Outdoor swimming pool with premium deck",
+            "Separate gender-specific changing rooms",
+            "Children's dedicated play area",
+            "Servant rooms for maintenance staff",
+          ]
+        }
+      ]
+    },
     highlights: [
-      "Boutique gated villa community with exclusive membership",
-      "Elegant architectural character with premium material selection", 
-      "Privacy-focused master planning and low-density development",
-      "Premium lifestyle amenities and recreational facilities",
-      "Timeless residential design with modern convenience integration",
-      "Superior construction quality and attention to detail",
-      "Landscaped environments and green space integration",
-      "Exclusive community services and management",
+      "Italian marble flooring with wooden bedrooms",
+      "B.ONE smart home automation as standard",
+      "15,000 sq ft four-level clubhouse complex",
+      "Banquet hall for 150+ guests with full catering",
+      "VRF air conditioning and 100% DG backup",
+      "Premium Villeroy & Boch bathroom fittings",
+      "Earthquake-resistant RCC structure (IS certified)",
+      "Solar power integration and treated water systems",
     ],
     marketPositioning: {
-      headline: "Redefining Luxury Villa Living in Hyderabad",
-      context: "Positioned to serve Hyderabad's growing population of affluent professionals seeking boutique residential experiences that combine privacy, elegance, and comprehensive lifestyle amenities within exclusive community environments.",
+      headline: "Hyderabad's Most Technologically Advanced Villa Community",
+      context: "Preston Ivy combines traditional luxury (Italian marble, teakwood) with cutting-edge technology (smart home automation, VRF systems) to create Hyderabad's most sophisticated residential community for tech-savvy affluent families.",
+      keyDifferentiators: [
+        "Only community with B.ONE smart home automation standard",
+        "Italian marble flooring throughout living areas",
+        "Four-level clubhouse with banquet facilities",
+        "Premium European bathroom fittings",
+        "Solar-integrated sustainable living",
+        "Earthquake-resistant certified construction",
+      ]
     },
-    cta: { href: "/contact", label: "Schedule a Private Tour" },
+    cta: { href: "/contact", label: "Experience Smart Luxury Living" },
   },
   amari: {
     name: "Preston Amari",
