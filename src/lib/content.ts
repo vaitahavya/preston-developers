@@ -479,29 +479,108 @@ export const projectPages = {
   },
   amari: {
     name: "Preston Amari",
-    subtitle: "Spacious Villa Living Connected to Hyderabad's Future Growth Trajectory.",
+    subtitle: "174 Premium Villas with Comprehensive 45,000 SqFt Clubhouse in Kollur's Growth Corridor",
     type: "residential" as const,
     copy: [
-      "Spread across 22 acres in Kollur along the strategic ORR Exit 2 corridor, Preston Amari represents a large-format gated villa community designed to capture the growing demand for spacious residential living within Hyderabad's expanding metropolitan boundaries while maintaining connectivity to established employment and lifestyle centers.",
-      "Positioned strategically between the mature IT corridors of Gachibowli and HITEC City and the emerging growth areas enabled by upcoming infrastructure investments, Preston Amari offers families the opportunity to secure larger living environments at comparative value while benefiting from the area's transformation through metro extensions and Regional Ring Road development.",
-      "The project reflects deep understanding of demographic patterns among Hyderabad's knowledge economy professionals — particularly the growing preference for larger homes, integrated community amenities, and suburban living environments that provide space for families while maintaining reasonable commute access to major employment centers.",
-      "With comprehensive master planning that includes lifestyle clubhouse facilities, recreational amenities, and community services, Preston Amari embodies Preston Developers' vision for modern community living that enhances daily life while building long-term asset value through strategic location and superior execution.",
+      "Preston Amari offers thoughtfully planned community living with 174 G+1 villas (3-4BHK with quarters) across 22 acres in Kollur's strategic ORR Exit 2 location. This well-designed development combines spacious villa living with a comprehensive 45,000 sq ft clubhouse featuring quality sports, wellness, and entertainment facilities.",
+      "Designed for Hyderabad's growing professional community, Preston Amari offers residents extensive amenities including a dedicated pickleball court, multiple sports facilities, spa and wellness services, and entertainment options — all within a secure, gated environment perfect for family living.",
+      "The strategic Kollur location provides optimal connectivity to Gachibowli (12 minutes), HITEC City (18 minutes), and the Financial District (35 minutes), while benefiting from upcoming metro connectivity and Regional Ring Road infrastructure investments that position this corridor as Hyderabad's next premium residential destination.",
     ],
     highlights: [
-      "22-acre gated villa development with comprehensive master planning",
-      "Large-format villa configurations with spacious layouts",
-      "Strategic ORR Exit 2 positioning with infrastructure connectivity",
-      "Proximity to Financial District (30-40 minutes) and major employment hubs", 
-      "State-of-the-art lifestyle clubhouse and recreational facilities",
-      "Future-focused location benefiting from metro and RRR development",
-      "Integrated community services and professional management",
-      "Premium construction quality with modern amenity integration",
+      "174 G+1 luxury villas (3-4BHK) with quarters on 22 acres",
+        "45,000 sq ft comprehensive clubhouse with 15+ quality amenities",
+        "Dedicated pickleball court with proper specifications",
+      "Separate men's & women's spa with saloon, steam, sauna, massage",
+      "Multi-purpose theater, banquet hall, and party lawn facilities",
+      "Professional sports courts: Tennis, basketball, sand volleyball",
+      "Strategic Kollur location with metro and RRR connectivity",
+      "Premium construction with VRF AC, home automation, and luxury finishes",
     ],
-    marketPositioning: {
-      headline: "Capturing Kollur's Emergence as Hyderabad's Next Residential Hub",
-      context: "Strategically positioned within the ORR Exit 2 corridor that offers optimal balance of space, value, and connectivity as infrastructure development unlocks new growth patterns across Hyderabad's expanding metropolitan region.",
+    clubhouseFeatures: {
+      headline: "Comprehensive Villa Community Clubhouse",
+      facilities: [
+        {
+          category: "Sports & Recreation",
+          icon: "🏓",
+          amenities: [
+            "Dedicated pickleball court",
+            "Professional badminton court", 
+            "2 squash courts (basement level)",
+            "Tennis/basketball court",
+            "Sand volleyball court",
+            "Open-air gym",
+          ]
+        },
+        {
+          category: "Wellness & Spa",
+          icon: "🧘",
+          amenities: [
+            "Separate men's & women's luxury spa",
+            "Steam rooms & sauna facilities",
+            "Professional massage therapy rooms",
+            "Premium salon services",
+            "Yoga & meditation room",
+            "State-of-the-art fitness center",
+          ]
+        },
+        {
+          category: "Entertainment & Social",
+          icon: "🎭",
+          amenities: [
+            "Multi-purpose theater with stadium seating",
+            "Grand banquet hall (150+ capacity)",
+            "Landscaped party lawn",
+            "Indoor games room",
+            "Cards & association room",
+            "Ladies library & lounge",
+          ]
+        },
+        {
+          category: "Hospitality",
+          icon: "🏨",
+          amenities: [
+            "3 fully-equipped guest bedrooms",
+            "Swimming pool with changing rooms",
+            "Underground parking (B1 level)",
+            "Children's dedicated play area",
+            "Community temple",
+            "Professional concierge services",
+          ]
+        }
+      ]
     },
-    cta: { href: "/contact", label: "Schedule a Site Visit" },
+    villaFeatures: {
+      headline: "Premium Villa Specifications & Smart Home Integration",
+      configurations: [
+        "3BHK Villas: 2,400-2,800 sq ft + quarters",
+        "4BHK Villas: 3,200-3,600 sq ft + quarters", 
+        "G+1 structure with spacious layouts",
+        "Private gardens and car parking",
+      ],
+      premiumFeatures: [
+        "Italian marble flooring (ground level)",
+        "Wooden flooring in bedrooms & living areas",
+        "VRF air conditioning system (Daikin/Mitsubishi)",
+        "Home automation with B.ONE smart hub",
+        "Premium CP fittings (Villeroy & Boch)",
+        "Teakwood doors with biometric locks",
+        "Granite kitchen countertops with premium appliances",
+        "100% DG backup with solar integration",
+      ]
+    },
+    marketPositioning: {
+      headline: "Kollur's Premier Villa Community with Unmatched Amenity Density",
+      context: "Preston Amari delivers the highest amenity-per-villa ratio in Hyderabad's villa segment, combining luxury residential living with resort-style facilities in Kollur's rapidly appreciating ORR Exit 2 corridor — strategically positioned for Hyderabad's next growth phase.",
+      keyDifferentiators: [
+        "45,000 sq ft comprehensive clubhouse facility",
+        "Dedicated pickleball court for community residents",
+        "Comprehensive spa & wellness facilities",
+        "Professional-grade sports infrastructure",
+        "Premium location with metro connectivity",
+        "Smart home integration as standard",
+      ]
+    },
+    cta: { href: "/contact", label: "Book Your Villa Today" },
   },
 } as const;
 

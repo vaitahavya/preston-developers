@@ -16,6 +16,16 @@ export const prestonMedia = {
     ivy: "/images/preston/ivy.jpg",
     amari: "/images/preston/amari-banner.jpg",
   } satisfies Record<ProjectSlug, string>,
+  
+  // Amari specific amenity images
+  amari: {
+    aerial: "/images/preston/amari-aerial.jpg",
+    pickleball: "/images/preston/amari-pickleball.jpg",
+    spa: "/images/preston/amari-spa.jpg",
+    theater: "/images/preston/amari-theater.jpg",
+    sports: "/images/preston/amari-sports.jpg",
+    banquet: "/images/preston/amari-banquet.jpg",
+  },
 } as const;
 
 export function projectImage(slug: ProjectSlug): string {
