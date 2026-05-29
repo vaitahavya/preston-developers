@@ -16,6 +16,7 @@ export function HomeContent() {
     <>
       <PageHero
         title={home.hero.headline}
+        tagline={home.hero.tagline}
         copy={home.hero.subheadline}
         image={prestonMedia.hero}
         imageAlt="Hyderabad skyline and Preston developments"

@@ -25,7 +25,7 @@ export default function AboutPage() {
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-[1400px] px-5 md:px-10">
           <div data-reveal>
-            <SectionHeading title={aboutPage.philosophy.headline} />
+            <SectionHeading eyebrow="Preston Is Built Better" title={aboutPage.philosophy.headline} />
             <div className="mt-8 max-w-4xl space-y-6 text-base leading-relaxed text-[var(--fg-muted)] md:text-lg">
               {aboutPage.philosophy.copy.map((p) => (
                 <p key={p.slice(0, 40)}>{p}</p>

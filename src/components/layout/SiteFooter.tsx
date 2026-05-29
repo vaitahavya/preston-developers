@@ -6,9 +6,14 @@ export function SiteFooter() {
     <footer className="border-t border-[var(--line)] bg-[var(--bg)]">
       <div className="mx-auto grid max-w-[1400px] gap-12 px-5 py-16 md:grid-cols-4 md:px-10">
         <div className="md:col-span-2">
-          <p className="font-display text-2xl font-semibold text-[var(--fg)]">
-            {site.name}
-          </p>
+          <div>
+            <p className="font-display text-2xl font-semibold text-[var(--fg)]">
+              {site.name}
+            </p>
+            <p className="text-[11px] font-bold uppercase tracking-[0.3em] text-[var(--accent)] mt-1">
+              {site.tagline}
+            </p>
+          </div>
           <p className="mt-4 max-w-md text-sm leading-relaxed text-[var(--fg-muted)]">
             Preston is not just selling projects. Preston is shaping the future
             identity of Hyderabad.

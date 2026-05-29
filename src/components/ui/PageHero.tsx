@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 
 type Props = {
   title: string;
+  tagline?: string;
   subtitle?: string;
   copy?: string;
   image?: string;
@@ -16,6 +17,7 @@ type Props = {
 
 export function PageHero({
   title,
+  tagline,
   subtitle,
   copy,
   image,
@@ -47,6 +49,11 @@ export function PageHero({
           align === "center" && "items-center text-center",
         )}
       >
+        {tagline ? (
+          <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-[var(--accent)] mb-2">
+            {tagline}
+          </p>
+        ) : null}
         {subtitle ? (
           <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[var(--brand-teal)]">
             {subtitle}

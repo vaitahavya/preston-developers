@@ -25,9 +25,14 @@ export function SiteNav() {
             className="h-8 w-8 object-contain brightness-0 invert"
             priority
           />
-          <span className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-[var(--fg)] md:text-base">
-            Preston
-          </span>
+          <div className="flex flex-col">
+            <span className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-[var(--fg)] md:text-base">
+              Preston
+            </span>
+            <span className="text-[8px] font-bold uppercase tracking-[0.25em] text-[var(--accent)] hidden md:block">
+              {site.tagline}
+            </span>
+          </div>
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary">

@@ -21,9 +21,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Preston Developers | Premium Real Estate Hyderabad",
+  title: "Preston Developers | Preston Is Built Better | Premium Real Estate Hyderabad",
   description:
-    "Preston Developers creates landmark residential and commercial destinations for the future of Hyderabad — founder-led, design-driven, built for long-term value.",
+    "Preston Is Built Better. Preston Developers creates landmark residential and commercial destinations for the future of Hyderabad — founder-led, design-driven, built for long-term value.",
   metadataBase: new URL("https://prestondevelopers.com"),
 };
 

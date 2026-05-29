@@ -18,6 +18,7 @@ export default function FounderPage() {
     <PageShell>
       <PageHero
         title={founderPage.hero.headline}
+        tagline="Preston Is Built Better"
         subtitle={founderPage.hero.subtitle}
         image={prestonMedia.founder}
         imageAlt="Randhir Reddy, Founder of Preston Developers"

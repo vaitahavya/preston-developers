@@ -1,5 +1,6 @@
 export const site = {
   name: "Preston Developers",
+  tagline: "Preston Is Built Better",
   founder: "Randhir Reddy",
   domain: "https://prestondevelopers.com",
   email: "info@prestondevelopers.com",
@@ -50,6 +51,7 @@ export const site = {
 
 export const home = {
   hero: {
+    tagline: "Preston Is Built Better",
     headline: "Hyderabad is Growing. Preston is Building What Comes Next.",
     subheadline:
       "Preston Developers creates landmark residential and commercial destinations designed for the future of Hyderabad — led by vision, driven by design, and built for long-term value in India's fastest-growing metropolitan economy.",
