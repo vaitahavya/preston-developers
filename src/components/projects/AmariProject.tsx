@@ -58,7 +58,7 @@ export function AmariProject() {
         <div className="mx-auto max-w-[1400px] px-5 md:px-10">
           <div data-reveal>
             <SectionHeading 
-              eyebrow="Preston Is Built Better"
+              eyebrow="BUILT BETTER"
               title={amari.clubhouseFeatures.headline}
               subtitle="45,000 sq ft of world-class amenities designed for luxury community living"
               align="center"

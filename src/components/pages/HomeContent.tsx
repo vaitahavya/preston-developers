@@ -42,27 +42,27 @@ export function HomeContent() {
         </div>
       </section>
 
-      {/* Founder Section */}
+      {/* Company Section */}
       <section className="border-b border-[var(--line)] py-24 md:py-32">
         <div className="mx-auto grid max-w-[1400px] gap-12 px-5 md:grid-cols-12 md:items-center md:gap-16 md:px-10">
           <div className="relative aspect-[4/5] overflow-hidden md:col-span-5" data-reveal>
             <Image
-              src={prestonMedia.founder}
-              alt="Randhir Reddy, Founder of Preston Developers"
+              src={prestonMedia.aboutBg}
+              alt="Preston Developers company headquarters and vision"
               fill
               className="object-cover"
               sizes="(min-width: 768px) 40vw, 100vw"
             />
           </div>
           <div className="md:col-span-7" data-reveal>
-            <SectionHeading title={home.founder.headline} />
+            <SectionHeading title={home.company.headline} />
             <div className="mt-8 space-y-5 text-base leading-relaxed text-[var(--fg-muted)] md:text-lg">
-              {home.founder.copy.map((p) => (
+              {home.company.copy.map((p) => (
                 <p key={p.slice(0, 40)}>{p}</p>
               ))}
             </div>
             <div className="mt-10 flex flex-wrap gap-4">
-              {home.founder.ctas.map((c, i) => (
+              {home.company.ctas.map((c, i) => (
                 <ButtonLink
                   key={c.href}
                   href={c.href}

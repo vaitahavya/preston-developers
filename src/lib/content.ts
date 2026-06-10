@@ -1,6 +1,6 @@
 export const site = {
   name: "Preston Developers",
-  tagline: "Preston Is Built Better",
+  tagline: "BUILT BETTER",
   founder: "Randhir Reddy",
   domain: "https://prestondevelopers.com",
   email: "info@prestondevelopers.com",
@@ -14,7 +14,6 @@ export const site = {
   nav: [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/founder", label: "Founder" },
     { href: "/residential", label: "Residential" },
     { href: "/commercial", label: "Commercial" },
     { href: "/projects/prime", label: "Projects" },
@@ -51,13 +50,13 @@ export const site = {
 
 export const home = {
   hero: {
-    tagline: "Preston Is Built Better",
+    tagline: "BUILT BETTER",
     headline: "Hyderabad is Growing. Preston is Building What Comes Next.",
     subheadline:
       "Preston Developers creates landmark residential and commercial destinations designed for the future of Hyderabad — led by vision, driven by design, and built for long-term value in India's fastest-growing metropolitan economy.",
     ctas: [
       { href: "/projects/prime", label: "Explore Projects" },
-      { href: "/founder", label: "Meet Randhir Reddy" },
+      { href: "/about", label: "About Preston Developers" },
     ],
     stats: [
       { label: "Growth Corridors", value: "4+" },
@@ -65,16 +64,16 @@ export const home = {
       { label: "Projects Pipeline", value: "₹2000+ Cr" },
     ],
   },
-  founder: {
+  company: {
     headline: "A New Generation of Real Estate Leadership",
     copy: [
-      "Randhir Reddy is building Preston Developers into one of Hyderabad's most ambitious real estate brands — focused on creating landmark destinations across premium residential and commercial spaces that define the city's transformation into a global economic hub.",
+      "Preston Developers has established itself as one of Hyderabad's most ambitious real estate brands — focused on creating landmark destinations across premium residential and commercial spaces that define the city's transformation into a global economic hub.",
       "With deep understanding of Hyderabad's evolution from a regional center to India's second-largest IT destination, hosting 200+ Global Capability Centres and driving 18-25% property appreciation across key corridors, Preston's strategy capitalizes on infrastructure-led growth patterns.",
       "As Telangana targets a $1 trillion economy by 2035 through massive infrastructure investments including the 340km Regional Ring Road, metro expansions, and AI City developments, Preston Developers is positioned to shape spaces that define what comes next.",
     ],
     ctas: [
-      { href: "/founder", label: "Read Founder Story" },
-      { href: "/media", label: "Watch Vision Film" },
+      { href: "/about", label: "Learn About Preston" },
+      { href: "/media", label: "Watch Vision Films" },
     ],
   },
   positioning: {
@@ -161,8 +160,8 @@ export const home = {
         data: "95%+ resident satisfaction scores across delivered projects",
       },
       {
-        title: "Founder-Led Vision and Execution Discipline",
-        copy: "Leadership combines 25+ years delivery experience with deep market intelligence and long-term strategic thinking. Disciplined capital allocation, construction excellence, and market timing expertise proven across multiple real estate cycles and growth phases.",
+        title: "Leadership-Driven Vision and Execution Discipline",
+        copy: "Preston Developers combines 25+ years collective delivery experience with deep market intelligence and long-term strategic thinking. Disciplined capital allocation, construction excellence, and market timing expertise proven across multiple real estate cycles and growth phases.",
         data: "₹2000+ Cr project pipeline with zero delays in delivery commitments",
       },
     ],
@@ -202,12 +201,12 @@ export const home = {
   },
   media: {
     headline: "Preston's Vision: Shaping Hyderabad's Future Landscape",
-    copy: "Explore the latest insights, project announcements, founder perspectives, and market intelligence from Preston Developers — positioning at the forefront of Hyderabad's transformation into a global real estate destination.",
+    copy: "Explore the latest insights, project announcements, leadership perspectives, and market intelligence from Preston Developers — positioning at the forefront of Hyderabad's transformation into a global real estate destination.",
     topics: [
       "Hyderabad's $1 Trillion Economy Vision: Real Estate Implications",
       "Why Strategic Location Intelligence Defines Premium Real Estate",
       "The Evolution of Luxury Community Living in Cyberabad",
-      "Founder Insights: Building for Hyderabad's Next Decade",
+      "Company Insights: Building for Hyderabad's Next Decade",
       "Commercial Real Estate: Capturing the GCC Expansion Wave",
       "Infrastructure-Led Growth: Understanding ORR Corridor Dynamics",
       "Sustainable Development: Preston's Environmental Leadership",
@@ -268,45 +267,45 @@ export const aboutPage = {
   },
 } as const;
 
-export const founderPage = {
+export const companyPage = {
   hero: {
-    headline: "Randhir Reddy",
-    subtitle: "Visionary leadership driving Preston Developers' emergence as Hyderabad's next landmark real estate brand.",
+    headline: "Preston Developers",
+    subtitle: "Visionary leadership and strategic expertise driving Preston Developers' emergence as Hyderabad's next landmark real estate brand.",
   },
   story: [
-    "Randhir Reddy represents a new generation of Indian real estate leadership — combining deep market intelligence with long-term strategic vision to build Preston Developers into one of Hyderabad's most ambitious and disciplined development brands.",
-    "With over two decades of experience across Hyderabad's real estate evolution — from its emergence as an IT destination through its current transformation into a global business hub — Randhir brings unique insight into the infrastructure, demographic, and economic patterns driving sustained property appreciation.",
-    "Under his leadership, Preston Developers focuses on strategic positioning within high-growth corridors, architectural excellence that enhances user experience, and construction discipline that builds market reputation. The approach emphasizes quality over quantity, with each project designed to set new standards while generating superior returns for stakeholders.",
-    "As Hyderabad evolves toward its $1 trillion economy vision through massive infrastructure investments and corporate expansion, Randhir's strategy positions Preston Developers to play a defining role in shaping the city's next landmarks — from premium residential communities to destination commercial developments that serve the needs of a globally-connected economy.",
+    "Preston Developers represents a new generation of Indian real estate leadership — combining deep market intelligence with long-term strategic vision to establish itself as one of Hyderabad's most ambitious and disciplined development brands.",
+    "With over two decades of collective experience across Hyderabad's real estate evolution — from the city's emergence as an IT destination through its current transformation into a global business hub — Preston Developers brings unique insight into the infrastructure, demographic, and economic patterns driving sustained property appreciation.",
+    "The company focuses on strategic positioning within high-growth corridors, architectural excellence that enhances user experience, and construction discipline that builds market reputation. Their approach emphasizes quality over quantity, with each project designed to set new standards while generating superior returns for stakeholders.",
+    "As Hyderabad evolves toward its $1 trillion economy vision through massive infrastructure investments and corporate expansion, Preston Developers' strategy positions the company to play a defining role in shaping the city's next landmarks — from premium residential communities to destination commercial developments that serve the needs of a globally-connected economy.",
   ],
-  personalBrand: {
+  brandIdentity: {
     headline: "Vision. Intelligence. Execution.",
-    subtitle: "Leadership philosophy built on strategic market insight, architectural excellence, and disciplined delivery.",
+    subtitle: "Company philosophy built on strategic market insight, architectural excellence, and disciplined delivery.",
   },
-  leadership: {
-    headline: "Leadership Approach",
+  approach: {
+    headline: "Our Development Approach",
     points: [
       {
         title: "Market Intelligence Leadership",
-        copy: "Deep understanding of Hyderabad's growth patterns, infrastructure development cycles, and demographic evolution drives strategic positioning decisions.",
+        copy: "Preston Developers maintains deep understanding of Hyderabad's growth patterns, infrastructure development cycles, and demographic evolution to drive strategic positioning decisions across all projects.",
       },
       {
         title: "Design-First Philosophy",
-        copy: "Belief that exceptional architecture and thoughtful planning create environments that enhance daily life while building long-term asset value.",
+        copy: "The company's belief that exceptional architecture and thoughtful planning create environments that enhance daily life while building long-term asset value guides every development decision.",
       },
       {
         title: "Execution Excellence",
-        copy: "Commitment to construction quality, timeline adherence, and stakeholder communication that builds market reputation and repeat business.",
+        copy: "Preston Developers' commitment to construction quality, timeline adherence, and stakeholder communication has built strong market reputation and established repeat business relationships.",
       },
       {
         title: "Long-Term Value Creation",
-        copy: "Focus on projects that remain relevant and valuable through multiple market cycles, creating sustained returns for all stakeholders.",
+        copy: "The company focuses on projects that remain relevant and valuable through multiple market cycles, creating sustained returns for all stakeholders including residents, investors, and partners.",
       },
     ],
   },
-  video: {
-    headline: "Founder Insights & Market Intelligence",
-    subtitle: "Deep perspectives on Hyderabad's real estate transformation and Preston's strategic positioning.",
+  insights: {
+    headline: "Company Insights & Market Intelligence",
+    subtitle: "Deep perspectives on Hyderabad's real estate transformation and Preston's strategic positioning across key growth corridors.",
     topics: [
       "Hyderabad's Evolution: From IT Hub to Global Business Destination",
       "Strategic Location Intelligence: Why Geography Drives Real Estate Returns",
@@ -659,7 +658,7 @@ export type ProjectSlug = keyof typeof projectPages;
 export const mediaPage = {
   hero: {
     headline: "Preston in the Spotlight: Insights, Analysis & Vision",
-    copy: "Explore comprehensive market intelligence, founder perspectives, project updates, and strategic insights from Preston Developers — positioned at the forefront of research and analysis driving Hyderabad's real estate transformation.",
+    copy: "Explore comprehensive market intelligence, leadership perspectives, project updates, and strategic insights from Preston Developers — positioned at the forefront of research and analysis driving Hyderabad's real estate transformation.",
   },
   categories: [
     {
@@ -673,8 +672,8 @@ export const mediaPage = {
       ],
     },
     {
-      title: "Founder Perspectives",
-      description: "Strategic insights and vision from Randhir Reddy on real estate development and market evolution",
+      title: "Leadership Perspectives",
+      description: "Strategic insights and vision from Preston Developers on real estate development and market evolution",
       topics: [
         "Building for Hyderabad's $1 Trillion Economy Vision",
         "Strategic Location Intelligence: The Foundation of Premium Development",

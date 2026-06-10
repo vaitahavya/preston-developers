@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Preston Developers",
   description:
-    "Preston Developers creates landmark residential and commercial destinations for the future of Hyderabad — founder-led, design-driven, built for long-term value.",
+    "Preston Developers creates landmark residential and commercial destinations for the future of Hyderabad — leadership-driven, design-focused, built for long-term value.",
   path: "/",
 });
 

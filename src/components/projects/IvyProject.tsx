@@ -58,7 +58,7 @@ export function IvyProject() {
         <div className="mx-auto max-w-[1400px] px-5 md:px-10">
           <div data-reveal>
             <SectionHeading 
-              eyebrow="Preston Is Built Better"
+              eyebrow="BUILT BETTER"
               title={ivy.specifications.headline}
               subtitle="Italian marble, smart technology, and premium European fittings"
               align="center"
