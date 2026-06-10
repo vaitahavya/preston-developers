@@ -20,8 +20,8 @@ export default function AboutPage() {
         title={companyPage.hero.headline}
         tagline="BUILT BETTER"
         subtitle={companyPage.hero.subtitle}
-        image={prestonMedia.founder}
-        imageAlt="Preston Developers company leadership and vision"
+        image={prestonMedia.aboutBg}
+        imageAlt="Preston Developers company headquarters and vision"
         size="large"
       />
       
@@ -31,7 +31,7 @@ export default function AboutPage() {
           <div className="relative aspect-[3/4] overflow-hidden md:col-span-5" data-reveal>
             <Image
               src={prestonMedia.founderOffice}
-              alt="Preston Developers office and leadership team"
+              alt="Preston Developers office headquarters and company workspace"
               fill
               className="object-cover"
               sizes="(min-width: 768px) 40vw, 100vw"
