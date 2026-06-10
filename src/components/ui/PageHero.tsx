@@ -44,8 +44,8 @@ export function PageHero({
       ) : null}
       <div
         className={cn(
-          "relative mx-auto flex max-w-[1400px] flex-col justify-end px-5 pb-16 pt-28 md:px-10 md:pb-24",
-          size === "large" && "min-h-[inherit] justify-center pb-20 pt-32",
+          "relative mx-auto flex max-w-[1400px] flex-col justify-end px-5 pb-24 pt-40 md:px-10 md:pb-32",
+          size === "large" && "min-h-[inherit] justify-center pb-32 pt-48",
           align === "center" && "items-center text-center",
         )}
       >
@@ -70,12 +70,12 @@ export function PageHero({
           {title}
         </h1>
         {copy ? (
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-[var(--fg-muted)] md:text-lg">
+          <p className="mt-10 max-w-2xl text-base leading-relaxed text-[var(--fg-muted)] md:text-lg">
             {copy}
           </p>
         ) : null}
         {ctas && ctas.length > 0 ? (
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-12 flex flex-wrap gap-4">
             {ctas.map((cta, i) => (
               <ButtonLink
                 key={cta.href}
