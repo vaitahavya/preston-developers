@@ -93,6 +93,57 @@ export function HomeContent() {
         </div>
       </section>
 
+      {/* Villa Communities */}
+      <section className="border-t border-[var(--line)] bg-[var(--bg-elevated)] py-48 md:py-64">
+        <div className="mx-auto max-w-[1400px] px-5 md:px-10">
+          <div className="text-center" data-reveal>
+            <SectionHeading
+              eyebrow="BUILT BETTER"
+              title="Premium Villa Communities"
+              subtitle="Gated communities designed for elevated living in Hyderabad's growth corridors"
+              align="center"
+            />
+          </div>
+          <div className="mt-24 grid gap-16 md:grid-cols-2">
+            {home.residential.projects.map((project) => (
+              <div key={project.slug} className="group" data-reveal>
+                <div className="relative aspect-[4/3] overflow-hidden bg-[var(--bg)]">
+                  <Image
+                    src={projectImage(project.slug)}
+                    alt={project.name}
+                    fill
+                    className="object-cover transition duration-700 group-hover:scale-[1.02]"
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/90 to-transparent" />
+                  <div className="absolute bottom-8 left-8">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--brand-teal)]">
+                      {project.tag}
+                    </p>
+                    <h2 className="font-display mt-3 text-3xl font-semibold text-[var(--fg)] md:text-4xl">
+                      {project.name}
+                    </h2>
+                  </div>
+                </div>
+                <div className="mt-8">
+                  <p className="text-base leading-relaxed text-[var(--fg-muted)] md:text-lg">
+                    {projectCopy(project.slug)}
+                  </p>
+                  <div className="mt-6">
+                    <a 
+                      href={`/projects/${project.slug}`}
+                      className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--brand-teal)] transition hover:text-[var(--brand-teal-light)]"
+                    >
+                      Explore Villa Community →
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Single Clear CTA */}
       <section className="border-t border-[var(--line)] bg-[var(--bg-elevated)] py-32 md:py-48">
         <div className="mx-auto max-w-[1400px] px-5 text-center md:px-10" data-reveal>
