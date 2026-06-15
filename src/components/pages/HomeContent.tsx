@@ -2,6 +2,7 @@ import Image from "next/image";
 import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ButtonLink } from "@/components/ui/ButtonLink";
+import { HeroSlider } from "@/components/ui/HeroSlider";
 import { home } from "@/lib/content";
 import { prestonMedia } from "@/lib/media";
 import type { ProjectSlug } from "@/lib/content";
@@ -47,6 +48,58 @@ export function HomeContent() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Premium Projects Showcase */}
+      <section className="py-24 md:py-32">
+        <div className="mx-auto max-w-[1400px] px-5 md:px-10">
+          <div className="text-center" data-reveal>
+            <SectionHeading
+              title="Our Portfolio in Focus"
+              subtitle="Real project imagery showcasing completed developments across Hyderabad"
+              align="center"
+            />
+          </div>
+          <div className="mt-16" data-reveal>
+            <HeroSlider
+              images={[
+                {
+                  src: prestonMedia.amari.hero,
+                  alt: "Preston Amari 45,000 sq ft clubhouse complex",
+                  title: "Preston Amari Clubhouse",
+                  subtitle: "45,000 SqFt Community Center"
+                },
+                {
+                  src: prestonMedia.prime.hero,
+                  alt: "Preston Prime commercial development in Gachibowli",
+                  title: "Preston Prime Commercial",
+                  subtitle: "Gachibowli Landmark"
+                },
+                {
+                  src: prestonMedia.ivy.interior,
+                  alt: "Preston Ivy luxury villa interior with Italian marble",
+                  title: "Preston Ivy Premium Interiors",
+                  subtitle: "Italian Marble & Smart Home"
+                },
+                {
+                  src: prestonMedia.amari.theater,
+                  alt: "Preston Amari multi-purpose theater with premium seating",
+                  title: "Luxury Community Amenities",
+                  subtitle: "Theater & Entertainment"
+                },
+                {
+                  src: prestonMedia.amari.villaExterior,
+                  alt: "Preston Amari G+1 villa architecture and landscaping",
+                  title: "Premium Villa Living",
+                  subtitle: "22-Acre Gated Community"
+                }
+              ]}
+              autoPlay={true}
+              interval={4000}
+              className="max-w-6xl mx-auto"
+            />
           </div>
         </div>
       </section>
@@ -140,6 +193,76 @@ export function HomeContent() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Real Project Gallery Highlights */}
+      <section className="py-24 md:py-32">
+        <div className="mx-auto max-w-[1400px] px-5 md:px-10">
+          <div className="text-center" data-reveal>
+            <SectionHeading
+              title="Built to Perfection"
+              subtitle="Real imagery from our completed and ongoing developments"
+              align="center"
+            />
+          </div>
+          <div className="mt-16 grid grid-cols-2 gap-4 md:grid-cols-4" data-reveal>
+            <div className="group relative aspect-square overflow-hidden bg-[var(--bg-elevated)]">
+              <Image
+                src={prestonMedia.amari.banquet}
+                alt="Preston Amari grand banquet hall"
+                fill
+                className="object-cover transition duration-500 group-hover:scale-[1.05]"
+                sizes="(min-width: 768px) 25vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/60 to-transparent" />
+              <div className="absolute bottom-3 left-3">
+                <p className="text-xs font-semibold text-[var(--brand-teal)]">Banquet Facilities</p>
+              </div>
+            </div>
+            
+            <div className="group relative aspect-square overflow-hidden bg-[var(--bg-elevated)]">
+              <Image
+                src={prestonMedia.ivy.interior}
+                alt="Preston Ivy luxury villa interior"
+                fill
+                className="object-cover transition duration-500 group-hover:scale-[1.05]"
+                sizes="(min-width: 768px) 25vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/60 to-transparent" />
+              <div className="absolute bottom-3 left-3">
+                <p className="text-xs font-semibold text-[var(--brand-teal)]">Villa Interiors</p>
+              </div>
+            </div>
+            
+            <div className="group relative aspect-square overflow-hidden bg-[var(--bg-elevated)]">
+              <Image
+                src={prestonMedia.amari.sports}
+                alt="Preston Amari professional sports facilities"
+                fill
+                className="object-cover transition duration-500 group-hover:scale-[1.05]"
+                sizes="(min-width: 768px) 25vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/60 to-transparent" />
+              <div className="absolute bottom-3 left-3">
+                <p className="text-xs font-semibold text-[var(--brand-teal)]">Sports Complex</p>
+              </div>
+            </div>
+            
+            <div className="group relative aspect-square overflow-hidden bg-[var(--bg-elevated)]">
+              <Image
+                src={prestonMedia.prime.hero}
+                alt="Preston Prime commercial development"
+                fill
+                className="object-cover transition duration-500 group-hover:scale-[1.05]"
+                sizes="(min-width: 768px) 25vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/60 to-transparent" />
+              <div className="absolute bottom-3 left-3">
+                <p className="text-xs font-semibold text-[var(--brand-teal)]">Commercial Hub</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

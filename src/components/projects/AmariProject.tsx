@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ButtonLink } from "@/components/ui/ButtonLink";
+import { ProjectGallery } from "@/components/ui/ProjectGallery";
 import { projectPages } from "@/lib/content";
 import { prestonMedia } from "@/lib/media";
 
@@ -102,8 +103,8 @@ export function AmariProject() {
           <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div className="relative aspect-[4/3] overflow-hidden" data-reveal>
               <Image
-                src={prestonMedia.amari.pickleball}
-                alt="Double-height pickleball court"
+                src={prestonMedia.amari.sports}
+                alt="Preston Amari sports facilities including pickleball court"
                 fill
                 className="object-cover"
                 sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
@@ -256,6 +257,123 @@ export function AmariProject() {
           </div>
         </div>
       </section>
+
+      {/* Project Gallery - Real Images */}
+      <ProjectGallery 
+        title="Preston Amari Visual Tour"
+        subtitle="Explore our 22-acre villa community through real project imagery showcasing completed clubhouse facilities, villa interiors, and community spaces"
+        images={[
+          // Community & Aerial Views
+          {
+            src: prestonMedia.amari.hero,
+            alt: "Preston Amari clubhouse exterior - architectural rendering",
+            category: "Community",
+            title: "Amari's Club Exterior"
+          },
+          {
+            src: prestonMedia.amari.aerial,
+            alt: "Preston Amari community aerial view",
+            category: "Community", 
+            title: "Aerial Community View"
+          },
+          {
+            src: prestonMedia.amari.community,
+            alt: "Preston Amari community landscape and planning",
+            category: "Community",
+            title: "Community Planning"
+          },
+          {
+            src: prestonMedia.amari.entrance,
+            alt: "Preston Amari main entrance and security gate",
+            category: "Community",
+            title: "Community Entrance"
+          },
+          
+          // Clubhouse Amenities
+          {
+            src: prestonMedia.amari.theater,
+            alt: "Preston Amari multi-purpose theater with stadium seating",
+            category: "Clubhouse",
+            title: "Multi-Purpose Theater"
+          },
+          {
+            src: prestonMedia.amari.banquet,
+            alt: "Preston Amari grand banquet hall for 150+ guests", 
+            category: "Clubhouse",
+            title: "Grand Banquet Hall"
+          },
+          {
+            src: prestonMedia.amari.clubhouse,
+            alt: "Preston Amari 45,000 sq ft clubhouse facility",
+            category: "Clubhouse", 
+            title: "Main Clubhouse"
+          },
+          {
+            src: prestonMedia.amari.spa,
+            alt: "Preston Amari luxury spa and wellness facilities",
+            category: "Clubhouse",
+            title: "Spa & Wellness Center"
+          },
+          {
+            src: prestonMedia.amari.pool,
+            alt: "Preston Amari swimming pool with changing rooms",
+            category: "Clubhouse",
+            title: "Swimming Pool"
+          },
+          {
+            src: prestonMedia.amari.gym,
+            alt: "Preston Amari fitness center and gym facilities",
+            category: "Clubhouse",
+            title: "Fitness Center"
+          },
+          
+          // Sports Facilities
+          {
+            src: prestonMedia.amari.sports,
+            alt: "Preston Amari sports courts - tennis, basketball, volleyball",
+            category: "Sports",
+            title: "Professional Sports Courts"
+          },
+          {
+            src: prestonMedia.amari.entertainment,
+            alt: "Preston Amari recreational and entertainment spaces",
+            category: "Sports", 
+            title: "Recreation Areas"
+          },
+          
+          // Villa Features
+          {
+            src: prestonMedia.amari.villas,
+            alt: "Preston Amari G+1 luxury villa exterior design",
+            category: "Villas",
+            title: "Premium Villa Exterior"
+          },
+          {
+            src: prestonMedia.amari.villaExterior,
+            alt: "Preston Amari villa architecture and landscaping",
+            category: "Villas",
+            title: "Villa Architecture"
+          },
+          {
+            src: prestonMedia.amari.villaInterior,
+            alt: "Preston Amari villa interior with Italian marble flooring",
+            category: "Villas", 
+            title: "Villa Interior Design"
+          },
+          {
+            src: prestonMedia.amari.villaLiving,
+            alt: "Preston Amari villa living area with premium finishes",
+            category: "Villas",
+            title: "Spacious Living Areas"
+          },
+          {
+            src: prestonMedia.amari.villaKitchen,
+            alt: "Preston Amari villa kitchen with granite countertops",
+            category: "Villas",
+            title: "Premium Kitchen Design"
+          },
+        ]}
+      />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ButtonLink } from "@/components/ui/ButtonLink";
+import { ProjectGallery } from "@/components/ui/ProjectGallery";
 import { projectPages } from "@/lib/content";
 import { prestonMedia } from "@/lib/media";
 
@@ -269,6 +270,55 @@ export function IvyProject() {
           </div>
         </div>
       </section>
+
+      {/* Project Gallery - Ivy Premium Features */}
+      <ProjectGallery 
+        title="Preston Ivy Premium Living Experience"
+        subtitle="Discover Hyderabad's most technologically advanced villa community featuring Italian marble, smart home automation, and luxury clubhouse facilities"
+        images={[
+          // Villa Exteriors & Architecture
+          {
+            src: prestonMedia.ivy.hero,
+            alt: "Preston Ivy boutique villa community architecture",
+            category: "Architecture",
+            title: "Boutique Villa Design"
+          },
+          {
+            src: prestonMedia.ivy.exterior,
+            alt: "Preston Ivy villa exterior with teakwood doors and premium finishes",
+            category: "Architecture",
+            title: "Premium Villa Exterior"
+          },
+          
+          // Interior Features & Smart Home
+          {
+            src: prestonMedia.ivy.interior,
+            alt: "Preston Ivy villa interior with Italian marble flooring and luxury furnishing",
+            category: "Interiors",
+            title: "Luxury Villa Interior"
+          },
+          {
+            src: prestonMedia.ivy.smartHome,
+            alt: "Preston Ivy B.ONE smart home automation system and technology",
+            category: "Smart Home",
+            title: "Smart Home Technology"
+          },
+          
+          // Clubhouse & Community
+          {
+            src: prestonMedia.ivy.clubhouse,
+            alt: "Preston Ivy 15,000 sq ft four-level clubhouse complex",
+            category: "Clubhouse",
+            title: "Four-Level Clubhouse"
+          },
+          {
+            src: prestonMedia.ivy.lifestyle,
+            alt: "Preston Ivy community lifestyle and premium living experience",
+            category: "Lifestyle",
+            title: "Premium Community Living"
+          },
+        ]}
+      />
     </>
   );
 }
