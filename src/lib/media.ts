@@ -12,23 +12,23 @@ export const prestonMedia = {
   residential: "/images/preston/residential.jpg",
   projects: {
     prime: "/images/preston/prime-pic1.jpg",
-    coliseum: "/images/projects images/collousium/Photo Album 1 - 0179.webp",
-    ivy: "/images/projects images/preston ivy/preston-ivy 4.webp",
+    coliseum: "/images/projects/collousium/Photo-Album-1---0179.webp",
+    ivy: "/images/projects/preston-ivy/preston-ivy-4.webp",
     amari: "/images/preston/amari-banner.jpg",
   } satisfies Record<ProjectSlug, string>,
   
   // Preston Prime commercial images
   prime: {
     hero: "/images/preston/prime-pic1.jpg",
-    exterior: "/images/projects images/preston prime/Photo Album 1 - 0011.webp",
+    exterior: "/images/projects/preston-prime/Photo-Album-1---0011.webp",
     interior: "/images/preston/commercial.jpg",
     lifestyle: "/images/preston/tnr-mall.jpg",
   },
   
   // Preston Coliseum commercial images  
   coliseum: {
-    hero: "/images/projects images/collousium/Photo Album 1 - 0179.webp",
-    exterior: "/images/projects images/collousium/Photo Album 1 - 0177.webp",
+    hero: "/images/projects/collousium/Photo-Album-1---0179.webp",
+    exterior: "/images/projects/collousium/Photo-Album-1---0177.webp",
     interior: "/images/preston/commercial.jpg",
   },
   
@@ -36,42 +36,42 @@ export const prestonMedia = {
   amari: {
     // Hero and main images
     hero: "/images/preston/amari-banner.jpg",
-    aerial: "/images/projects images/amari/Photo Album 1 - 0037.webp",
-    villas: "/images/projects images/house/preston-amari house1.webp",
+    aerial: "/images/projects/amari/Photo-Album-1---0037.webp",
+    villas: "/images/projects/house/preston-amari-house1.webp",
     
     // Clubhouse amenity images
-    clubhouse: "/images/projects images/amari/preston amari clubhouse46.webp",
+    clubhouse: "/images/projects/amari/preston-amari-clubhouse46.webp",
     theater: "/images/preston/amari-theater.jpg",
     banquet: "/images/preston/amari-banquet.jpg",
     sports: "/images/preston/amari-sports.jpg",
     
     // Additional clubhouse facilities
-    spa: "/images/projects images/amari/preston amari clubhouse88.webp",
-    gym: "/images/projects images/amari/preston amari clubhouse75.webp",
-    pool: "/images/projects images/amari/preston amari clubhouse72.webp",
-    entertainment: "/images/projects images/amari/preston amari clubhouse83.webp",
+    spa: "/images/projects/amari/preston-amari-clubhouse88.webp",
+    gym: "/images/projects/amari/preston-amari-clubhouse75.webp",
+    pool: "/images/projects/amari/preston-amari-clubhouse72.webp",
+    entertainment: "/images/projects/amari/preston-amari-clubhouse83.webp",
     
     // Villa interiors and exteriors
-    villaExterior: "/images/projects images/house/preston-amari house10.webp",
-    villaInterior: "/images/projects images/house/preston-amari house21.webp",
-    villaLiving: "/images/projects images/house/preston-amari house15.webp",
-    villaKitchen: "/images/projects images/house/preston-amari house28.webp",
+    villaExterior: "/images/projects/house/preston-amari-house10.webp",
+    villaInterior: "/images/projects/house/preston-amari-house21.webp",
+    villaLiving: "/images/projects/house/preston-amari-house15.webp",
+    villaKitchen: "/images/projects/house/preston-amari-house28.webp",
     
     // Community views
-    community: "/images/projects images/amari/Photo Album 1 - 0069.webp",
-    landscape: "/images/projects images/amari/Photo Album 1 - 0103.webp",
-    entrance: "/images/projects images/amari/Photo Album 1 - 0106.webp",
+    community: "/images/projects/amari/Photo-Album-1---0069.webp",
+    landscape: "/images/projects/amari/Photo-Album-1---0103.webp",
+    entrance: "/images/projects/amari/Photo-Album-1---0106.webp",
   },
   
   // Preston Ivy premium villa images
   ivy: {
     // Hero and main images
-    hero: "/images/projects images/preston ivy/preston-ivy 4.webp",
+    hero: "/images/projects/preston-ivy/preston-ivy-4.webp",
     exterior: "/images/preston/ivy-exterior.jpg",
     interior: "/images/preston/ivy-interior.jpg",
     
     // Premium features
-    smartHome: "/images/projects images/preston ivy/preston-ivy 5.webp",
+    smartHome: "/images/projects/preston-ivy/preston-ivy-5.webp",
     clubhouse: "/images/preston/ivy-clubhouse.jpg",
     lifestyle: "/images/preston/ivy.jpg",
   },
