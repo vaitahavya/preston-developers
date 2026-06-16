@@ -1,3 +1,13 @@
+type NavItem = {
+  href: string;
+  label: string;
+  tag?: string;
+};
+
+type NavItemWithDropdown = NavItem & {
+  dropdown?: NavItem[];
+};
+
 export const site = {
   name: "Preston Developers",
   tagline: "BUILT BETTER",
@@ -14,11 +24,26 @@ export const site = {
   nav: [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/residential", label: "Residential" },
-    { href: "/commercial", label: "Commercial" },
-    { href: "/projects/prime", label: "Projects" },
-    { href: "/media", label: "Media" },
-    { href: "/insights", label: "Insights" },
+    { 
+      href: "/projects/prime", 
+      label: "Projects",
+      dropdown: [
+        { href: "/projects/amari", label: "Preston Amari", tag: "Villa Community" },
+        { href: "/projects/ivy", label: "Preston Ivy", tag: "Boutique Villas" },
+        { href: "/projects/prime", label: "Preston Prime", tag: "Commercial" },
+        { href: "/projects/coliseum", label: "Preston Coliseum", tag: "Mixed-Use" },
+        { href: "/residential", label: "All Residential", tag: "Villas" },
+        { href: "/commercial", label: "All Commercial", tag: "Retail & Office" },
+      ]
+    },
+    { 
+      href: "/insights", 
+      label: "Insights",
+      dropdown: [
+        { href: "/insights", label: "Market Analysis", tag: "Research" },
+        { href: "/media", label: "Media Center", tag: "News & Updates" },
+      ]
+    },
     { href: "/contact", label: "Contact" },
   ],
   projectsNav: [
