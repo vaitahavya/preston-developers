@@ -16,10 +16,9 @@ export const site = {
   email: "info@prestondevelopers.com",
   phones: ["+91 91007 77066", "+91 72070 86678"],
   address: [
-    "Plot no. 32, Lumbini Avenue",
     "Flat #401, Indra Prastha Building, 4th Floor",
     "Opp. CARE Hospital, Gachibowli",
-    "Hyderabad, Telangana",
+    "Hyderabad, Telangana - 500032",
   ],
   nav: [
     { href: "/", label: "Home" },
