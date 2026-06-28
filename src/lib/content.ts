@@ -152,7 +152,7 @@ export const home = {
         slug: "ivy",
         name: "Preston Ivy",
         tag: "Boutique Villa Community",
-        copy: "A refined gated villa address designed around privacy, architectural excellence, and timeless residential living — positioned within Hyderabad's premium residential belt for families seeking elevated lifestyle experiences.",
+        copy: "A refined gated villa address designed around privacy, architectural excellence, and timeless residential living — positioned in the heart of Madhapur for families seeking elevated lifestyle experiences within Hyderabad's premier IT corridor.",
         marketContext: "Targets the luxury segment driving ₹8,562 crore in FY26 transactions, with buyers seeking larger formats and premium community planning in established corridors.",
       },
       {
@@ -478,10 +478,10 @@ export const projectPages = {
   },
   ivy: {
     name: "Preston Ivy",
-    subtitle: "Premium Villa Community with Italian Marble, Smart Home Technology & 15,000 SqFt Clubhouse",
+    subtitle: "Premium Villa Community in Madhapur with Italian Marble, Smart Home Technology & 15,000 SqFt Clubhouse",
     type: "residential" as const,
     copy: [
-      "Preston Ivy represents sophisticated villa living with Italian marble flooring, wooden bedroom floors, and premium Villeroy & Boch fittings throughout. Each villa features smart home automation with B.ONE hub technology, VRF air conditioning, and comprehensive security systems including biometric locks and CCTV monitoring.",
+      "Preston Ivy represents sophisticated villa living in the heart of Madhapur — Hyderabad's established IT and lifestyle corridor — with Italian marble flooring, wooden bedroom floors, and premium Villeroy & Boch fittings throughout. Each villa features smart home automation with B.ONE hub technology, VRF air conditioning, and comprehensive security systems including biometric locks and CCTV monitoring.",
       "The community centers around a magnificent 15,000 sq ft four-level clubhouse featuring a banquet hall for 150 guests, spa with massage rooms and jacuzzi, indoor games room, association office, and 4 guest bedrooms. The facility includes outdoor swimming pool with gender-specific changing rooms and dedicated kids play area.",
       "Built with earthquake-resistant RCC framework compliant with IS codes for Hyderabad's seismic zone, featuring 8-feet height teakwood doors, UPVC windows with mosquito mesh, and solar power integration. Every villa receives 10-12 KVA power supply with 100% DG backup and treated water through pneumatic systems.",
     ],
