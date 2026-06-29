@@ -5,16 +5,17 @@ import { ButtonLink } from "@/components/ui/ButtonLink";
 import { HeroSlider } from "@/components/ui/HeroSlider";
 import { home } from "@/lib/content";
 import { prestonMedia } from "@/lib/media";
+import { projectMedia, mediaByCategory } from "@/lib/project-media";
 import type { ProjectSlug } from "@/lib/content";
 
 function projectImage(slug: string): string {
   const projectMap = {
-    prime: prestonMedia.projects.prime,
-    coliseum: prestonMedia.projects.coliseum,
-    ivy: prestonMedia.projects.ivy,
-    amari: prestonMedia.projects.amari,
+    prime: projectMedia.prime.exterior,
+    coliseum: projectMedia.coliseum.exterior,
+    ivy: projectMedia.ivy.hero,
+    amari: projectMedia.amari.hero,
   };
-  return projectMap[slug as keyof typeof projectMap] || prestonMedia.projects.prime;
+  return projectMap[slug as keyof typeof projectMap] || projectMedia.prime.exterior;
 }
 
 function projectCopy(slug: string) {
@@ -66,34 +67,34 @@ export function HomeContent() {
             <HeroSlider
               images={[
                 {
-                  src: prestonMedia.amari.hero,
-                  alt: "Preston Amari 45,000 sq ft clubhouse complex",
-                  title: "Preston Amari Clubhouse",
-                  subtitle: "45,000 SqFt Community Center"
+                  src: projectMedia.amari.hero,
+                  alt: "Preston Amari luxury villa community with modern architecture",
+                  title: "Preston Amari Community",
+                  subtitle: "174 Luxury Villas • 22 Acres"
                 },
                 {
-                  src: prestonMedia.prime.hero,
+                  src: projectMedia.amari.clubhouseHero,
+                  alt: "Preston Amari luxury clubhouse with swimming pool",
+                  title: "Resort-Style Clubhouse",
+                  subtitle: "45,000 SqFt • Pool & Spa"
+                },
+                {
+                  src: projectMedia.ivy.hero,
+                  alt: "Preston Ivy luxury villa community architecture",
+                  title: "Preston Ivy Villas",
+                  subtitle: "Exclusive Villa Community"
+                },
+                {
+                  src: projectMedia.prime.exterior,
                   alt: "Preston Prime commercial development in Gachibowli",
                   title: "Preston Prime Commercial",
-                  subtitle: "Gachibowli Landmark"
+                  subtitle: "Gachibowli Business District"
                 },
                 {
-                  src: prestonMedia.ivy.interior,
-                  alt: "Preston Ivy luxury villa interior with Italian marble",
-                  title: "Preston Ivy Premium Interiors",
-                  subtitle: "Italian Marble & Smart Home"
-                },
-                {
-                  src: prestonMedia.amari.theater,
-                  alt: "Preston Amari multi-purpose theater with premium seating",
-                  title: "Luxury Community Amenities",
-                  subtitle: "Theater & Entertainment"
-                },
-                {
-                  src: prestonMedia.amari.villaExterior,
-                  alt: "Preston Amari G+1 villa architecture and landscaping",
-                  title: "Premium Villa Living",
-                  subtitle: "22-Acre Gated Community"
+                  src: projectMedia.amari.basketballTennis,
+                  alt: "Basketball and tennis courts at Preston Amari",
+                  title: "World-Class Sports",
+                  subtitle: "Multi-Sport Complex"
                 }
               ]}
               autoPlay={true}
@@ -210,22 +211,50 @@ export function HomeContent() {
           <div className="mt-16 grid grid-cols-2 gap-4 md:grid-cols-4" data-reveal>
             <div className="group relative aspect-square overflow-hidden bg-[var(--bg-elevated)]">
               <Image
-                src={prestonMedia.amari.banquet}
-                alt="Preston Amari grand banquet hall"
+                src={projectMedia.shared.pickleball}
+                alt="Premium pickleball court facility"
                 fill
                 className="object-cover transition duration-500 group-hover:scale-[1.05]"
                 sizes="(min-width: 768px) 25vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/60 to-transparent" />
               <div className="absolute bottom-3 left-3">
-                <p className="text-xs font-semibold text-[var(--brand-teal)]">Banquet Facilities</p>
+                <p className="text-xs font-semibold text-[var(--brand-teal)]">Premium Sports</p>
               </div>
             </div>
             
             <div className="group relative aspect-square overflow-hidden bg-[var(--bg-elevated)]">
               <Image
-                src={prestonMedia.ivy.interior}
-                alt="Preston Ivy luxury villa interior"
+                src={projectMedia.shared.gymWide}
+                alt="State-of-the-art fitness center facility"
+                fill
+                className="object-cover transition duration-500 group-hover:scale-[1.05]"
+                sizes="(min-width: 768px) 25vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/60 to-transparent" />
+              <div className="absolute bottom-3 left-3">
+                <p className="text-xs font-semibold text-[var(--brand-teal)]">Wellness Center</p>
+              </div>
+            </div>
+            
+            <div className="group relative aspect-square overflow-hidden bg-[var(--bg-elevated)]">
+              <Image
+                src={projectMedia.shared.movieRoom}
+                alt="Premium entertainment facility with theater seating"
+                fill
+                className="object-cover transition duration-500 group-hover:scale-[1.05]"
+                sizes="(min-width: 768px) 25vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/60 to-transparent" />
+              <div className="absolute bottom-3 left-3">
+                <p className="text-xs font-semibold text-[var(--brand-teal)]">Entertainment</p>
+              </div>
+            </div>
+            
+            <div className="group relative aspect-square overflow-hidden bg-[var(--bg-elevated)]">
+              <Image
+                src={projectMedia.shared.livingRoom}
+                alt="Elegant villa living room design"
                 fill
                 className="object-cover transition duration-500 group-hover:scale-[1.05]"
                 sizes="(min-width: 768px) 25vw, 50vw"
@@ -233,34 +262,6 @@ export function HomeContent() {
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/60 to-transparent" />
               <div className="absolute bottom-3 left-3">
                 <p className="text-xs font-semibold text-[var(--brand-teal)]">Villa Interiors</p>
-              </div>
-            </div>
-            
-            <div className="group relative aspect-square overflow-hidden bg-[var(--bg-elevated)]">
-              <Image
-                src={prestonMedia.amari.sports}
-                alt="Preston Amari professional sports facilities"
-                fill
-                className="object-cover transition duration-500 group-hover:scale-[1.05]"
-                sizes="(min-width: 768px) 25vw, 50vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/60 to-transparent" />
-              <div className="absolute bottom-3 left-3">
-                <p className="text-xs font-semibold text-[var(--brand-teal)]">Sports Complex</p>
-              </div>
-            </div>
-            
-            <div className="group relative aspect-square overflow-hidden bg-[var(--bg-elevated)]">
-              <Image
-                src={prestonMedia.prime.hero}
-                alt="Preston Prime commercial development"
-                fill
-                className="object-cover transition duration-500 group-hover:scale-[1.05]"
-                sizes="(min-width: 768px) 25vw, 50vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/60 to-transparent" />
-              <div className="absolute bottom-3 left-3">
-                <p className="text-xs font-semibold text-[var(--brand-teal)]">Commercial Hub</p>
               </div>
             </div>
           </div>

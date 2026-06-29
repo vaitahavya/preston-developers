@@ -1,5 +1,6 @@
 import { PageShell } from "@/components/layout/PageShell";
 import { HomeContent } from "@/components/pages/HomeContent";
+import ScrollVideoSection from "@/components/scroll-section/ScrollVideoSection";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
@@ -12,6 +13,7 @@ export const metadata = createMetadata({
 export default function HomePage() {
   return (
     <PageShell>
+      <ScrollVideoSection />
       <HomeContent />
     </PageShell>
   );
