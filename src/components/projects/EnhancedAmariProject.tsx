@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ButtonLink } from "@/components/ui/ButtonLink";
@@ -203,7 +203,35 @@ export function EnhancedAmariProject() {
   const [activeCategory, setActiveCategory] = useState("confirmed");
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  const currentCategory = amenityCategories.find(cat => cat.id === activeCategory);
+  const categoryRefs = useRef<Record<string, HTMLDivElement | null>>({});
+
+  // Scroll-spy: highlight the pill for whichever category block is just under the sticky bar.
+  useEffect(() => {
+    if (typeof window === "undefined" || !("IntersectionObserver" in window)) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+        const id = visible[0]?.target.getAttribute("data-category-id");
+        if (id) setActiveCategory(id);
+      },
+      { rootMargin: "-140px 0px -55% 0px", threshold: [0, 0.25, 0.5, 1] }
+    );
+
+    const nodes = Object.values(categoryRefs.current).filter(
+      (node): node is HTMLDivElement => node !== null
+    );
+    nodes.forEach((node) => observer.observe(node));
+
+    return () => observer.disconnect();
+  }, []);
+
+  const handlePillClick = (id: string) => {
+    setActiveCategory(id);
+    categoryRefs.current[id]?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   return (
     <>
@@ -392,61 +420,83 @@ export function EnhancedAmariProject() {
               align="center"
             />
           </div>
+        </div>
 
-          {/* Category Navigation */}
-          <div className="mt-16 flex flex-wrap justify-center gap-4" data-reveal>
-            {amenityCategories.map((category) => (
-              <button
-                key={category.id}
-                onClick={() => setActiveCategory(category.id)}
-                className={`px-6 py-3 rounded-full text-sm font-medium transition ${
-                  activeCategory === category.id
-                    ? "bg-[var(--brand-teal)] text-[var(--bg)]"
-                    : "bg-[var(--bg-elevated)] text-[var(--fg-muted)] hover:text-[var(--fg)]"
-                }`}
-              >
-                {category.name}
-              </button>
-            ))}
+        {/* Sticky category navigation (pins under the 72px global header) */}
+        <div className="sticky top-[72px] z-30 mt-12 border-b border-[var(--line)] bg-[var(--bg)]/90 py-3 backdrop-blur">
+          <div className="mx-auto max-w-[1400px] px-5 md:px-10">
+            <div
+              className="flex gap-3 overflow-x-auto whitespace-nowrap [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:justify-center"
+              role="tablist"
+              aria-label="Amenity categories"
+            >
+              {amenityCategories.map((category) => (
+                <button
+                  key={category.id}
+                  type="button"
+                  onClick={() => handlePillClick(category.id)}
+                  aria-current={activeCategory === category.id ? "true" : undefined}
+                  className={`shrink-0 rounded-full px-6 py-3 text-sm font-medium transition ${
+                    activeCategory === category.id
+                      ? "bg-[var(--brand-teal)] text-[var(--bg)]"
+                      : "bg-[var(--bg-elevated)] text-[var(--fg-muted)] hover:text-[var(--fg)]"
+                  }`}
+                >
+                  {category.name}
+                </button>
+              ))}
+            </div>
           </div>
+        </div>
 
-          {/* Category Content */}
-          {currentCategory && (
-            <div className="mt-16">
-              <div className="text-center mb-12" data-reveal>
-                <h3 className="font-display text-2xl font-semibold text-[var(--fg)] md:text-3xl">
-                  {currentCategory.name}
-                </h3>
-                <p className="mt-2 text-[var(--fg-muted)]">{currentCategory.description}</p>
-              </div>
+        {/* Stacked category blocks with scroll-spy */}
+        <div className="mx-auto max-w-[1400px] px-5 md:px-10">
+          <div className="mt-16 space-y-24">
+            {amenityCategories.map((category) => (
+              <div
+                key={category.id}
+                id={`amenity-${category.id}`}
+                data-category-id={category.id}
+                ref={(node) => {
+                  categoryRefs.current[category.id] = node;
+                }}
+                className="scroll-mt-[140px]"
+              >
+                <div className="text-center mb-12" data-reveal>
+                  <h3 className="font-display text-2xl font-semibold text-[var(--fg)] md:text-3xl">
+                    {category.name}
+                  </h3>
+                  <p className="mt-2 text-[var(--fg-muted)]">{category.description}</p>
+                </div>
 
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                {currentCategory.images.map((image, index) => (
-                  <div
-                    key={index}
-                    className="group cursor-pointer"
-                    data-reveal
-                    onClick={() => setSelectedImage(image.src)}
-                  >
-                    <div className="relative aspect-[4/3] overflow-hidden bg-[var(--bg-elevated)]">
-                      <Image
-                        src={image.src}
-                        alt={image.title}
-                        fill
-                        className="object-cover transition duration-500 group-hover:scale-[1.05]"
-                        sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                      <div className="absolute bottom-4 left-4 translate-y-4 group-hover:translate-y-0 transition-transform opacity-0 group-hover:opacity-100">
-                        <h4 className="font-display text-lg font-semibold text-[var(--fg)]">{image.title}</h4>
-                        <p className="text-sm text-[var(--fg-muted)]">{image.description}</p>
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                  {category.images.map((image, index) => (
+                    <div
+                      key={index}
+                      className="group cursor-pointer"
+                      data-reveal
+                      onClick={() => setSelectedImage(image.src)}
+                    >
+                      <div className="relative aspect-[4/3] overflow-hidden bg-[var(--bg-elevated)]">
+                        <Image
+                          src={image.src}
+                          alt={image.title}
+                          fill
+                          className="object-cover transition duration-500 group-hover:scale-[1.05]"
+                          sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg)]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <div className="absolute bottom-4 left-4 translate-y-4 group-hover:translate-y-0 transition-transform opacity-0 group-hover:opacity-100">
+                          <h4 className="font-display text-lg font-semibold text-[var(--fg)]">{image.title}</h4>
+                          <p className="text-sm text-[var(--fg-muted)]">{image.description}</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-          )}
+            ))}
+          </div>
         </div>
       </section>
 
